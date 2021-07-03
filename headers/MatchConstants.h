@@ -1,0 +1,8 @@
+#define MATCH_HEIGHT 14.0
+#define MATCH_SET_WIDTH 20.0
+#define MATCH_WIN_WIDTH 10.0
+#define MATCH_MATCHUP_WIDTH 15.0
+#define MATCH_XS 2.0
+#define MATCH_YS 3.0
+#define MATCH_LEFT 15.0
+#define MATCH_RIGHT 289.0
