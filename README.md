@@ -33,3 +33,16 @@ Das Programm `Tournament` muss nun aus der Dropbox in den lokalen `Programme`-Or
 Nun kann das Programm mit einem Doppelklick auf `Tournament.app` gestartet werden. Beim Start überprüft `Tournament` ob die Datenbank schon erreichbar ist und startet sie falls notwendig. Danach muss man das Programm beenden und nach ein paar Sekunden neu starten. Beim nächsten Start werden die Datenbank-Tabellen erzeugt. Dies geschieht automatisch und der Benutzer spürt (ausser evtl. einer kleinen Verzögerung) nichts davon.
 
 Ab jetzt kann mit dem Programm `Tournament` normal gearbeitet werden.
+## Backup
+Um die Postgres-Datenbank in einem Docker-Container auf eine neue Major-Version upzudaten muss man die Datenbank manchmal exportieren und wieder importieren. Dies kann man etwa mit den folgenden Befehlen erreichen:
+
+    docker run -p 5433:5432 -e POSTGRES_USER=docker -e POSTGRES_PASSWORD=docker -v /Users/Shared/postgres/data:/var/lib/postgresql/data postgres:10.6&
+    docker ps        # um den Namen des Containers zu bekommen
+    docker exec <container name> pg_dump docker >~/Documents/Backup/postgres/tt.sql
+    
+Ein Restore ist dann ebenso einfach indem man die .sql-Datei in psql piped (nachdem man den neuen Container gestartet hat)
+
+    cat ~/Documents/Backup/postgres/tt.sql | docker exec -i <container name> psql -U docker
+   
+
+
