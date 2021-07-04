@@ -1,0 +1,42 @@
+
+/* Class = "NSWindow"; title = "Panel"; ObjectID = "12"; */
+"12.title" = "Panel";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "33"; */
+"33.title" = "Box";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "46"; */
+"46.title" = "Box";
+
+/* Class = "NSFormCell"; title = "Série:"; ObjectID = "53"; */
+"53.title" = "Série:";
+
+/* Class = "NSFormCell"; title = "Priorité:"; ObjectID = "54"; */
+"54.title" = "Priorité:";
+
+/* Class = "NSFormCell"; title = "Numéro:"; ObjectID = "55"; */
+"55.title" = "Numéro:";
+
+/* Class = "NSTextFieldCell"; title = "Licence"; ObjectID = "108"; */
+"108.title" = "Licence";
+
+/* Class = "NSTextFieldCell"; title = "Joueur"; ObjectID = "109"; */
+"109.title" = "Joueur";
+
+/* Class = "NSButtonCell"; title = "Supprimer dernier joueur"; ObjectID = "110"; */
+"110.title" = "Supprimer dernier joueur";
+
+/* Class = "NSButtonCell"; title = "Nouveau joueur"; ObjectID = "111"; */
+"111.title" = "Nouveau joueur";
+
+/* Class = "NSTextFieldCell"; title = "Tables:\n"; ObjectID = "112"; */
+"112.title" = "Tables:\n";
+
+/* Class = "NSButtonCell"; title = "Jouer les parties une à une"; ObjectID = "114"; */
+"114.title" = "Jouer les parties une à une";
+
+/* Class = "NSFormCell"; title = "Field:"; ObjectID = "115"; */
+"115.title" = "Field:";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "117"; */
+"117.title" = "Name";

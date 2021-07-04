@@ -1,0 +1,50 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {print = id; }; 
+            CLASS = MatchView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {thisMatch = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {
+                revert = id; 
+                save = id; 
+                setCommercialField = id; 
+                setSmallPaperLandscape = id; 
+                setSmallPaperPortrait = id; 
+            }; 
+            CLASS = PreferencesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                associations = id; 
+                commercial = id; 
+                emailAddress = NSTextField; 
+                exactResults = id; 
+                firstWidth = id; 
+                gameWidth = id; 
+                groupDetails = id; 
+                groupLetters = id; 
+                landscape = id; 
+                otherMatches = id; 
+                printImmediately = id; 
+                referee = id; 
+                smallPaperLandscapeText = NSTextField; 
+                smallPaperPortraitText = NSTextField; 
+                startDepot = id; 
+                subTitle = id; 
+                tourDate = id; 
+                tourNumbers = id; 
+                tourTitle = id; 
+                tournamentID = id; 
+                umpires = id; 
+                uploadCommand = NSTextField; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

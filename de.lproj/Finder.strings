@@ -1,0 +1,15 @@
+
+/* Class = "NSButtonCell"; title = "Dismiss"; ObjectID = "3Q7-pa-aLI"; */
+"3Q7-pa-aLI.title" = "Abbrechen";
+
+/* Class = "NSTextFieldCell"; title = "Match (Number):"; ObjectID = "KVq-yU-AO7"; */
+"KVq-yU-AO7.title" = "Match (Nummer):";
+
+/* Class = "NSTextFieldCell"; title = "Find players or matches"; ObjectID = "MTP-53-8MV"; */
+"MTP-53-8MV.title" = "Spieler oder Matches finden";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "NNb-RY-oYb"; */
+"NNb-RY-oYb.title" = "Finden";
+
+/* Class = "NSTextFieldCell"; title = "Player (Licence):"; ObjectID = "q2C-rC-KZM"; */
+"q2C-rC-KZM.title" = "Spieler (Lizenz):";

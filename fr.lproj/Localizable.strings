@@ -1,0 +1,46 @@
+/* 
+  Localizable.strings
+  Tournament
+
+  Created by Paul Trunz on 11.06.17.
+
+*/
+
+"clickTtLoaded" = "Joueurs chargé par Click-TT";
+/* import activity while downloading the file from click-tt */
+"downloadingFile" = "Chargez fichier de Click-TT";
+/* import activity while unzipping the file */
+"unzippingFile" = "Décompresser fichier";
+"playersBeforeAfter" = "Nombre des joueurs avant: %d\naprès: %d";
+/* import activity while counting the lines from click-tt */
+"countingLines" = "Comptant les lignes";
+/* import activity while parsing lines from click-tt */
+"parsingLines" = "créer des joueurs de %d lignes";
+/* alert title after a series is finished */
+"SerieBeendet" = "Série est fini";
+/* alert info, format after last match has been played, series full name as argument */
+ "letztesSpielGespielt" = "Le match final de la série %@ a été joué";
+ /* alert button for showing the ranking list */
+"RanglisteDrucken" = "Imprimer le classement";
+/* alert button for not showing the ranking list */
+"merksMirSo" = "J'en ai pas besoin.";
+/* alert message text for errors */
+"error" = "Erreur!";
+/* alert message text for warnings */
+"warning" = "Avertissement";
+/* alert message text for completed tasks */
+"completed" = "Completé";
+/* alert button ok */
+"ok" = "D'accord";
+/* alert informational message when the tournament could not be found */
+"tournamentWithIdNotFound" = "Je ne trouve pas le tournois avec ID %@";
+/* alert informational message upon completion of entries import */
+"entryImportCompleted" = "Import des entrés completé:\n replacé %d entrés\npar %d\n";
+/* alert informational message part when some series were missing */
+"undefinedSeriesLoaded" = "Avertissement: J'ai trouvé des entrés pour les séries indéfini suivant:";
+/* alert informational message when an unknown mime-type was received */
+"unknownTypeReceived" = "Avertissement: J'ai reçu le MIME-type %@ inconnu";
+/* alert informational message when an HTTP error occurred during a request */
+"httpError" = "Erreur: J'ai reçu un erreur HTTP %@";
+/* alert informational message when entries for all series were imported successfully */
+"seriesImportedSuccessfully" = "Les entrés suivants ont été importé avec succes:\n";

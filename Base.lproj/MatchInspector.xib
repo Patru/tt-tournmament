@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MatchInspector">
+            <connections>
+                <outlet property="bestOfSeven" destination="Hux-7r-fPT" id="7wI-Fx-lcg"/>
+                <outlet property="infoForm" destination="65" id="68"/>
+                <outlet property="lowerInfoForm" destination="143" id="148"/>
+                <outlet property="lowerPriority" destination="146" id="149"/>
+                <outlet property="lowerRanking" destination="135" id="150"/>
+                <outlet property="matchView" destination="8" id="183"/>
+                <outlet property="playerView" destination="23" id="182"/>
+                <outlet property="series" destination="74" id="76"/>
+                <outlet property="setsForm" destination="34" id="62"/>
+                <outlet property="upperInfoForm" destination="113" id="147"/>
+                <outlet property="upperPriority" destination="120" id="151"/>
+                <outlet property="upperRanking" destination="111" id="152"/>
+                <outlet property="winnerLicence" destination="69" id="77"/>
+                <outlet property="winnerName" destination="75" id="78"/>
+                <outlet property="woButton" destination="56" id="64"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Panel" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="9" userLabel="Panel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="248" y="751" width="796" height="369"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="11">
+                <rect key="frame" x="0.0" y="0.0" width="796" height="369"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box borderType="none" titlePosition="noTitle" id="23">
+                        <rect key="frame" x="20" y="20" width="364" height="331"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="7de-91-gvs">
+                            <rect key="frame" x="0.0" y="0.0" width="364" height="331"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <box title="Spieler A" id="121">
+                                    <rect key="frame" x="14" y="174" width="332" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <view key="contentView" id="t5R-dG-6E9">
+                                        <rect key="frame" x="2" y="2" width="328" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="113">
+                                                <rect key="frame" x="27" y="57" width="287" height="73"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                <size key="cellSize" width="287" height="19"/>
+                                                <size key="intercellSpacing" width="1" height="8"/>
+                                                <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="211">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <font key="titleFont" metaFont="smallSystem"/>
+                                                </formCell>
+                                                <cells>
+                                                    <column>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Spielpass:" id="119">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="1" title="Name:" id="112">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="2" title="Club:" id="114">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                    </column>
+                                                </cells>
+                                            </form>
+                                            <textField verticalHuggingPriority="750" id="115">
+                                                <rect key="frame" x="17" y="32" width="82" height="14"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Klassierung:" id="198">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="118">
+                                                <rect key="frame" x="185" y="32" width="59" height="14"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Priorität:" id="201">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="120">
+                                                <rect key="frame" x="249" y="30" width="65" height="19"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="202">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="111">
+                                                <rect key="frame" x="90" y="30" width="56" height="19"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="197">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" imageHugsTitle="YES" id="116">
+                                                <rect key="frame" x="8" y="0.0" width="110" height="32"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <buttonCell key="cell" type="push" title="inspizieren" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="199">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="inspectPlayer:" target="-2" id="155"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" tag="2" imageHugsTitle="YES" id="117">
+                                                <rect key="frame" x="209" y="0.0" width="111" height="32"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <buttonCell key="cell" type="push" title="verdoppeln" bezelStyle="rounded" alignment="center" borderStyle="border" tag="2" inset="2" id="200">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="insertMatch:" target="-2" id="154"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <font key="titleFont" metaFont="system"/>
+                                </box>
+                                <box title="Spieler B" id="145">
+                                    <rect key="frame" x="14" y="14" width="332" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <view key="contentView" id="qlH-sa-RJx">
+                                        <rect key="frame" x="2" y="2" width="328" height="130"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="143">
+                                                <rect key="frame" x="27" y="57" width="287" height="73"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                <size key="cellSize" width="287" height="19"/>
+                                                <size key="intercellSpacing" width="1" height="8"/>
+                                                <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="212">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <font key="titleFont" metaFont="smallSystem"/>
+                                                </formCell>
+                                                <cells>
+                                                    <column>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Spielpass:" id="140">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="1" title="Name:" id="136">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="2" title="Club:" id="139">
+                                                            <font key="font" metaFont="smallSystem"/>
+                                                            <font key="titleFont" metaFont="smallSystem"/>
+                                                        </formCell>
+                                                    </column>
+                                                </cells>
+                                            </form>
+                                            <textField verticalHuggingPriority="750" id="144">
+                                                <rect key="frame" x="17" y="32" width="82" height="14"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Klassierung:" id="207">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="141">
+                                                <rect key="frame" x="185" y="32" width="59" height="14"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" title="Priorität:" id="206">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="146">
+                                                <rect key="frame" x="249" y="30" width="65" height="19"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="208">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" id="135">
+                                                <rect key="frame" x="90" y="30" width="56" height="19"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="203">
+                                                    <font key="font" metaFont="smallSystem"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" tag="1" imageHugsTitle="YES" id="137">
+                                                <rect key="frame" x="8" y="0.0" width="110" height="32"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <buttonCell key="cell" type="push" title="inspizieren" bezelStyle="rounded" alignment="center" borderStyle="border" tag="1" inset="2" id="204">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="inspectPlayer:" target="-2" id="156"/>
+                                                </connections>
+                                            </button>
+                                            <button verticalHuggingPriority="750" tag="3" imageHugsTitle="YES" id="138">
+                                                <rect key="frame" x="209" y="0.0" width="111" height="32"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <buttonCell key="cell" type="push" title="verdoppeln" bezelStyle="rounded" alignment="center" borderStyle="border" tag="3" inset="2" id="205">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="insertMatch:" target="-2" id="157"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                    <font key="titleFont" metaFont="system"/>
+                                </box>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box borderType="none" title="Box" titlePosition="noTitle" id="8">
+                        <rect key="frame" x="412" y="20" width="364" height="331"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="9Iy-hr-wFl">
+                            <rect key="frame" x="0.0" y="0.0" width="364" height="331"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="34">
+                                    <rect key="frame" x="244" y="14" width="102" height="202"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="102" height="22"/>
+                                    <size key="intercellSpacing" width="1" height="8"/>
+                                    <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="209">
+                                        <font key="font" metaFont="system"/>
+                                        <font key="titleFont" metaFont="system"/>
+                                    </formCell>
+                                    <cells>
+                                        <column>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Satz 1:" id="45">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="1" title="Satz 2:" id="46">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="2" title="Satz 3:" id="47">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="3" title="Satz 4:" id="48">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="4" title="Satz 5:" id="49">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="5" title="Satz 6:" id="50">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="6" title="Satz 7:" id="51">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                        </column>
+                                    </cells>
+                                </form>
+                                <button imageHugsTitle="YES" id="56">
+                                    <rect key="frame" x="63" y="106" width="41" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <buttonCell key="cell" type="check" title="wo" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="190">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                                <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="65">
+                                    <rect key="frame" x="14" y="134" width="160" height="82"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="160" height="22"/>
+                                    <size key="intercellSpacing" width="1" height="8"/>
+                                    <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="210">
+                                        <font key="font" metaFont="system"/>
+                                        <font key="titleFont" metaFont="system"/>
+                                    </formCell>
+                                    <cells>
+                                        <column>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Tisch:" id="66">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" tag="1" title="Runde:" id="67">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Zeit:" id="213">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                        </column>
+                                    </cells>
+                                </form>
+                                <textField verticalHuggingPriority="750" id="69">
+                                    <rect key="frame" x="121" y="259" width="78" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="191">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="70">
+                                    <rect key="frame" x="11" y="286" width="105" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Serie:" id="192">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="71">
+                                    <rect key="frame" x="11" y="236" width="105" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Sieger:" id="193">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="72">
+                                    <rect key="frame" x="11" y="261" width="105" height="17"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Siegerspielpass:" id="194">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="74">
+                                    <rect key="frame" x="121" y="289" width="225" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="195">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <textField verticalHuggingPriority="750" id="75">
+                                    <rect key="frame" x="121" y="229" width="225" height="22"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="196">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button misplaced="YES" imageHugsTitle="YES" id="Hux-7r-fPT">
+                                    <rect key="frame" x="63" y="86" width="104" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <buttonCell key="cell" type="check" title="best of seven" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="a8o-rE-YNf">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+</document>

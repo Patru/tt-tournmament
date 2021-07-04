@@ -1,0 +1,36 @@
+
+/* Class = "NSWindow"; title = "Bestätigte Spieler"; ObjectID = "5"; */
+"5.title" = "Bestätigte Spieler";
+
+/* Class = "NSTextFieldCell"; title = "Spieler"; ObjectID = "35"; */
+"35.title" = "Spieler";
+
+/* Class = "NSTextFieldCell"; title = "Kategorien"; ObjectID = "37"; */
+"37.title" = "Kategorien";
+
+/* Class = "NSButtonCell"; title = "Spieler bestätigen"; ObjectID = "43"; */
+"43.title" = "Spieler bestätigen";
+
+/* Class = "NSButtonCell"; title = "Kategorie abschliessen"; ObjectID = "45"; */
+"45.title" = "Kategorie abschliessen";
+
+/* Class = "NSButtonCell"; title = "Alle Spieler laden"; ObjectID = "47"; */
+"47.title" = "Alle Spieler laden";
+
+/* Class = "NSTextFieldCell"; title = "Vorname"; ObjectID = "58"; */
+"58.title" = "Vorname";
+
+/* Class = "NSTextFieldCell"; title = "Name"; ObjectID = "60"; */
+"60.title" = "Name";
+
+/* Class = "NSTextFieldCell"; title = "Club"; ObjectID = "62"; */
+"62.title" = "Club";
+
+/* Class = "NSTextFieldCell"; title = "Geburtsdatum"; ObjectID = "64"; */
+"64.title" = "Geburtsdatum";
+
+/* Class = "NSTextFieldCell"; title = "Serie"; ObjectID = "66"; */
+"66.title" = "Serie";
+
+/* Class = "NSButtonCell"; title = "Neuer Spieler"; ObjectID = "78"; */
+"78.title" = "Neuer Spieler";

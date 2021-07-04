@@ -1,0 +1,19 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                selectMatchDirectly = id; 
+                selectMatchWithNumber = id; 
+                show = id; 
+                withdraw = id; 
+            }; 
+            CLASS = OpenMatchesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {countField = id; numberField = id; openMatchesBrowser = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TournamentWindow; LANGUAGE = ObjC; SUPERCLASS = NSWindow; }
+    ); 
+    IBVersion = 1; 
+}

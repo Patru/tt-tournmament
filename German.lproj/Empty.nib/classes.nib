@@ -1,0 +1,28 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                allMatchSheets = id; 
+                emptyGroups = id; 
+                emptyMatchSheets = id; 
+                emptyMatchTable = id; 
+                makeSeries = id; 
+                show = id; 
+            }; 
+            CLASS = EmptyController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                maxGroups = id; 
+                numEmpty = id; 
+                numGroupPlayers = id; 
+                numPlayers = id; 
+                series = id; 
+                seriesTitle = id; 
+                window = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,22 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {addPlayer = id; playSingleMatches = id; removeLastPlayer = id; }; 
+            CLASS = GroupInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                infoForm = NSForm; 
+                licences = NSMatrix; 
+                matchView = NSView; 
+                matches = NSBrowser; 
+                playerView = NSView; 
+                players = NSMatrix; 
+                tableField = NSTextField; 
+            }; 
+            SUPERCLASS = InspectorController; 
+        }, 
+        {CLASS = InspectorController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

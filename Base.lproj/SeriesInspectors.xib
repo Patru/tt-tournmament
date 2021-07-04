@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="SeriesInspector">
+            <connections>
+                <outlet property="details" destination="15" id="135"/>
+                <outlet property="matchView" destination="8" id="106"/>
+                <outlet property="playerView" destination="5" id="107"/>
+                <outlet property="statistik" destination="125" id="136"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Panel" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="7" userLabel="Panel" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="204" y="802" width="796" height="356"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="14">
+                <rect key="frame" x="0.0" y="0.0" width="796" height="356"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box borderType="none" title="Box" titlePosition="noTitle" id="5">
+                        <rect key="frame" x="20" y="20" width="364" height="318"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="FmT-73-epE">
+                            <rect key="frame" x="0.0" y="0.0" width="364" height="318"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="15">
+                                    <rect key="frame" x="13" y="73" width="332" height="232"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="332" height="22"/>
+                                    <size key="intercellSpacing" width="1" height="8"/>
+                                    <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="121">
+                                        <font key="font" metaFont="system"/>
+                                        <font key="titleFont" metaFont="system"/>
+                                    </formCell>
+                                    <cells>
+                                        <column>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" title="Name:" id="82">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="justified" tag="1" title="Kürzel:" id="83">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" tag="2" title="Geschlecht:" id="84">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" tag="3" title="Minimum:" id="85">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" tag="4" title="Maximum:" id="86">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="best of 7:" id="HGN-RJ-Tjv">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Startzeit:" id="9Nn-sw-gME">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Koeffizient:" id="WZ8-ik-Pvy">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                        </column>
+                                    </cells>
+                                </form>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box borderType="none" title="Box" titlePosition="noTitle" id="8">
+                        <rect key="frame" x="415" y="20" width="364" height="318"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <view key="contentView" id="hGA-em-dtH">
+                            <rect key="frame" x="0.0" y="0.0" width="364" height="318"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button verticalHuggingPriority="750" imageHugsTitle="YES" id="133">
+                                    <rect key="frame" x="86" y="14" width="237" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="push" title="offene Gruppen einzeln spielen" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="134">
+                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="playSingleMatchesForAllOpenGroups:" target="-2" id="137"/>
+                                    </connections>
+                                </button>
+                                <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autosizesCells="NO" id="125">
+                                    <rect key="frame" x="19" y="103" width="326" height="202"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    <size key="cellSize" width="326" height="22"/>
+                                    <size key="intercellSpacing" width="1" height="8"/>
+                                    <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="131">
+                                        <font key="font" metaFont="system"/>
+                                        <font key="titleFont" metaFont="system"/>
+                                    </formCell>
+                                    <cells>
+                                        <column>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="justified" title="Spiele:" id="126">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="justified" tag="1" title="nicht begonnen:" id="127">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="justified" tag="2" title="Gruppen:" id="128">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" tag="3" title="nicht begonnen:" id="129">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="justified" tag="4" title="weiteste Runde:" id="130">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="früheste Runde:" id="132">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                            <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Spieler:" id="138">
+                                                <font key="font" metaFont="system"/>
+                                                <font key="titleFont" metaFont="system"/>
+                                            </formCell>
+                                        </column>
+                                    </cells>
+                                </form>
+                            </subviews>
+                        </view>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                </subviews>
+            </view>
+        </window>
+    </objects>
+</document>

@@ -1,0 +1,258 @@
+
+/* Class = "NSButtonCell"; title = "Alle freigeben"; ObjectID = "1QN-dw-ZYN"; */
+"1QN-dw-ZYN.title" = "Alle freigeben";
+
+/* Class = "NSMenuItem"; title = "Listen für Auslosung"; ObjectID = "2IA-za-cvH"; */
+"2IA-za-cvH.title" = "Listen für Auslosung";
+
+/* Class = "NSMenuItem"; title = "Spieler aus Click-TT"; ObjectID = "2nf-gV-7sD"; */
+"2nf-gV-7sD.title" = "Spieler aus Click-TT";
+
+/* Class = "NSMenuItem"; title = "Leere Zettel"; ObjectID = "5Mk-sy-OAR"; */
+"5Mk-sy-OAR.title" = "Leere Zettel";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "abgemeldete Spieler"; ObjectID = "9Vr-tC-s46"; */
+"9Vr-tC-s46.title" = "abgemeldete Spieler";
+
+/* Class = "NSButtonCell"; title = "Liegt neben nächstem Tisch"; ObjectID = "9YM-sc-ZQT"; */
+"9YM-sc-ZQT.title" = "Liegt neben nächstem Tisch";
+
+/* Class = "NSMenuItem"; title = "Menü löschen"; ObjectID = "9dT-rt-iGu"; */
+"9dT-rt-iGu.title" = "Menü löschen";
+
+/* Class = "NSMenu"; title = "Ablage"; ObjectID = "9wB-i6-LaP"; */
+"9wB-i6-LaP.title" = "Ablage";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSMenuItem"; title = "Use Selection for Find"; ObjectID = "BwV-6r-tVn"; */
+"BwV-6r-tVn.title" = "Use Selection for Find";
+
+/* Class = "NSMenuItem"; title = "Ausschneiden"; ObjectID = "DML-7t-ZcD"; */
+"DML-7t-ZcD.title" = "Ausschneiden";
+
+/* Class = "NSMenuItem"; title = "PräferenzenW..."; ObjectID = "DrN-jX-7nn"; */
+"DrN-jX-7nn.title" = "PräferenzenW...";
+
+/* Class = "NSMenuItem"; title = "Ausgeben"; ObjectID = "E0i-UI-3Jp"; */
+"E0i-UI-3Jp.title" = "Ausgeben";
+
+/* Class = "NSMenu"; title = "Help"; ObjectID = "F2S-fz-NVQ"; */
+"F2S-fz-NVQ.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Schliessen"; ObjectID = "F3P-SK-zoh"; */
+"F3P-SK-zoh.title" = "Schliessen";
+
+/* Class = "NSMenuItem"; title = "Speichern unter..."; ObjectID = "GDG-4s-g3V"; */
+"GDG-4s-g3V.title" = "Speichern unter...";
+
+/* Class = "NSMenuItem"; title = "Minimize"; ObjectID = "Gl3-vl-b94"; */
+"Gl3-vl-b94.title" = "Minimize";
+
+/* Class = "NSMenu"; title = "Find"; ObjectID = "HLr-ly-P0j"; */
+"HLr-ly-P0j.title" = "Find";
+
+/* Class = "NSMenuItem"; title = "Alle Fenstern in den Vordergrund"; ObjectID = "I3D-3r-dCa"; */
+"I3D-3r-dCa.title" = "Alle Fenstern in den Vordergrund";
+
+/* Class = "NSWindow"; title = "Turnier"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Turnier";
+
+/* Class = "NSMenuItem"; title = "Turnier verlassen"; ObjectID = "IUp-Mj-RlF"; */
+"IUp-Mj-RlF.title" = "Turnier verlassen";
+
+/* Class = "NSTextFieldCell"; title = "Possible matches"; ObjectID = "Ift-Z9-grR"; */
+"Ift-Z9-grR.title" = "Mögliche Spiele";
+
+/* Class = "NSMenu"; title = "Zuletzt verwendet"; ObjectID = "JB9-Zm-gun"; */
+"JB9-Zm-gun.title" = "Zuletzt verwendet";
+
+/* Class = "NSTextFieldCell"; title = "available Tables"; ObjectID = "Jct-Sw-GXb"; */
+"Jct-Sw-GXb.title" = "Verfügbare Tische";
+
+/* Class = "NSMenuItem"; title = "Scroll to Selection"; ObjectID = "Jl9-Q9-vrg"; */
+"Jl9-Q9-vrg.title" = "Scroll to Selection";
+
+/* Class = "NSButtonCell"; title = "Tisch ändern"; ObjectID = "Jm6-HG-xr7"; */
+"Jm6-HG-xr7.title" = "Tisch ändern";
+
+/* Class = "NSButtonCell"; title = "Tisch löschen"; ObjectID = "KjM-Bb-Tqs"; */
+"KjM-Bb-Tqs.title" = "Tisch löschen";
+
+/* Class = "NSMenuItem"; title = "Speichern"; ObjectID = "MP3-5p-rHG"; */
+"MP3-5p-rHG.title" = "Speichern";
+
+/* Class = "NSMenuItem"; title = "Tournament"; ObjectID = "MUb-En-7oY"; */
+"MUb-En-7oY.title" = "Tournament";
+
+/* Class = "NSMenuItem"; title = "Kopieren"; ObjectID = "N6w-tA-Bdi"; */
+"N6w-tA-Bdi.title" = "Kopieren";
+
+/* Class = "NSMenuItem"; title = "Find"; ObjectID = "QXB-0N-Har"; */
+"QXB-0N-Har.title" = "Find";
+
+/* Class = "NSButtonCell"; title = "Zurück"; ObjectID = "SrQ-Fh-FS1"; */
+"SrQ-Fh-FS1.title" = "Zurück";
+
+/* Class = "NSTextFieldCell"; title = "Available umpires"; ObjectID = "Thr-Ly-pfK"; */
+"Thr-Ly-pfK.title" = "Verfügbare Schiedsrichter";
+
+/* Class = "NSTextFieldCell"; title = "Priorität"; ObjectID = "UvU-R6-tHc"; */
+"UvU-R6-tHc.title" = "Priorität";
+
+/* Class = "NSMenu"; title = "Services"; ObjectID = "UyL-zH-ScO"; */
+"UyL-zH-ScO.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Tabellen"; ObjectID = "Xaa-gy-Mf7"; */
+"Xaa-gy-Mf7.title" = "Tabellen";
+
+/* Class = "NSMenu"; title = "Fenster"; ObjectID = "XxI-eC-HqK"; */
+"XxI-eC-HqK.title" = "Fenster";
+
+/* Class = "NSMenuItem"; title = "Resultate Click-TT"; ObjectID = "Y8O-hT-vZm"; */
+"Y8O-hT-vZm.title" = "Resultate Click-TT";
+
+/* Class = "NSMenuItem"; title = "Spielerdaten"; ObjectID = "a4G-3F-URM"; */
+"a4G-3F-URM.title" = "Spielerdaten";
+
+/* Class = "NSMenuItem"; title = "Zahlungen"; ObjectID = "aBN-fB-9M8"; */
+"aBN-fB-9M8.title" = "Zahlungen";
+
+/* Class = "NSMenuItem"; title = "Window"; ObjectID = "aUF-d1-5bR"; */
+"aUF-d1-5bR.title" = "Window";
+
+/* Class = "NSButtonCell"; title = "Neuer Tisch"; ObjectID = "bEO-rz-lKw"; */
+"bEO-rz-lKw.title" = "Neuer Tisch";
+
+/* Class = "NSMenuItem"; title = "Redo"; ObjectID = "bTX-GR-Udm"; */
+"bTX-GR-Udm.title" = "Redo";
+
+/* Class = "NSWindow"; title = "Tisch"; ObjectID = "bk9-Nd-lZL"; */
+"bk9-Nd-lZL.title" = "Tisch";
+
+/* Class = "NSMenu"; title = "Ausgeben"; ObjectID = "c9P-ie-bvd"; */
+"c9P-ie-bvd.title" = "Ausgeben";
+
+/* Class = "NSMenuItem"; title = "Drucken..."; ObjectID = "cj7-NX-hby"; */
+"cj7-NX-hby.title" = "Drucken...";
+
+/* Class = "NSMenuItem"; title = "Über Tournament"; ObjectID = "d2H-i4-MPw"; */
+"d2H-i4-MPw.title" = "Über Tournament";
+
+/* Class = "NSMenuItem"; title = "File"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "File";
+
+/* Class = "NSMenuItem"; title = "Präferenzen..."; ObjectID = "dVI-j5-uij"; */
+"dVI-j5-uij.title" = "Präferenzen...";
+
+/* Class = "NSButtonCell"; title = "Datenbank lesen"; ObjectID = "eNX-e9-6a3"; */
+"eNX-e9-6a3.title" = "Datenbank lesen";
+
+/* Class = "NSButtonCell"; title = "Spiel ohne SchiRi"; ObjectID = "eP2-SH-CgK"; */
+"eP2-SH-CgK.title" = "Spiel ohne SchiRi";
+
+/* Class = "NSMenuItem"; title = "Neu"; ObjectID = "gId-SN-gpJ"; */
+"gId-SN-gpJ.title" = "Neu";
+
+/* Class = "NSMenuItem"; title = "Einfügen"; ObjectID = "goy-kc-bJI"; */
+"goy-kc-bJI.title" = "Einfügen";
+
+/* Class = "NSButtonCell"; title = "Spiel mit SchiRi"; ObjectID = "hIW-aB-Nga"; */
+"hIW-aB-Nga.title" = "Spiel mit SchiRi";
+
+/* Class = "NSMenu"; title = "Tournament"; ObjectID = "hP1-iC-Nat"; */
+"hP1-iC-Nat.title" = "Tournament";
+
+/* Class = "NSMenuItem"; title = "Tische und Zeiten laden..."; ObjectID = "iX1-IT-QLY"; */
+"iX1-IT-QLY.title" = "Tische und Zeiten laden...";
+
+/* Class = "NSMenuItem"; title = "Spieler aus externer Quelle..."; ObjectID = "d5f-N6-fiV"; */
+"d5f-N6-fiV.title" = "Spieler aus externer Quelle...";
+
+/* Class = "NSMenuItem"; title = "Spieler bestätigen"; ObjectID = "ikV-DQ-qbC"; */
+"ikV-DQ-qbC.title" = "Spieler bestätigen";
+
+/* Class = "NSTextFieldCell"; title = "Running matches"; ObjectID = "jho-tL-E3r"; */
+"jho-tL-E3r.title" = "Laufende Spiele";
+
+/* Class = "NSMenuItem"; title = "Seriendaten"; ObjectID = "kMk-T7-P8P"; */
+"kMk-T7-P8P.title" = "Seriendaten";
+
+/* Class = "NSMenuItem"; title = "Serien"; ObjectID = "kfI-ki-TYs"; */
+"kfI-ki-TYs.title" = "Serien";
+
+/* Class = "NSMenuItem"; title = "Andere verstecken"; ObjectID = "lPf-a4-4Qy"; */
+"lPf-a4-4Qy.title" = "Andere verstecken";
+
+/* Class = "NSMenuItem"; title = "Verstecken"; ObjectID = "mCW-Oo-mWe"; */
+"mCW-Oo-mWe.title" = "Verstecken";
+
+/* Class = "NSMenuItem"; title = "Find Next"; ObjectID = "mDT-WM-10Q"; */
+"mDT-WM-10Q.title" = "Find Next";
+
+/* Class = "NSButtonCell"; title = "löschen"; ObjectID = "p3R-aU-IdZ"; */
+"p3R-aU-IdZ.title" = "löschen";
+
+/* Class = "NSMenu"; title = "Bearbeiten"; ObjectID = "s3u-PM-0Ht"; */
+"s3u-PM-0Ht.title" = "Bearbeiten";
+
+/* Class = "NSTextFieldCell"; title = "Nummer"; ObjectID = "sks-Gu-bgW"; */
+"sks-Gu-bgW.title" = "Nummer";
+
+/* Class = "NSTextFieldCell"; title = "Importing players from Click-TT"; ObjectID = "JPD-AC-Fhv"; */
+"JPD-AC-Fhv.title" = "Importiere Spieler aus Click-TT";
+
+/* Class = "NSButtonCell"; title = "Gut so"; ObjectID = "tgM-UF-5pl"; */
+"tgM-UF-5pl.title" = "Gut so";
+
+/* Class = "NSMenuItem"; title = "Inspektor"; ObjectID = "ti4-Eo-5sI"; */
+"ti4-Eo-5sI.title" = "Inspektor";
+
+/* Class = "NSButtonCell"; title = "Resultat"; ObjectID = "tie-1s-yoy"; */
+"tie-1s-yoy.title" = "Resultat";
+
+/* Class = "NSMenuItem"; title = "Find..."; ObjectID = "u5Y-uf-s7G"; */
+"u5Y-uf-s7G.title" = "Find...";
+
+/* Class = "NSMenuItem"; title = "Services"; ObjectID = "vfu-MC-db6"; */
+"vfu-MC-db6.title" = "Services";
+
+/* Class = "NSMenuItem"; title = "Alle anzeigen"; ObjectID = "vmh-ET-BhS"; */
+"vmh-ET-BhS.title" = "Alle anzeigen";
+
+/* Class = "NSMenuItem"; title = "Find Previous"; ObjectID = "wgz-8p-tEx"; */
+"wgz-8p-tEx.title" = "Find Previous";
+
+/* Class = "NSMenuItem"; title = "Help"; ObjectID = "wpr-3q-Mcd"; */
+"wpr-3q-Mcd.title" = "Help";
+
+/* Class = "NSMenuItem"; title = "Hauptfenster"; ObjectID = "xJm-cu-uK5"; */
+"xJm-cu-uK5.title" = "Hauptfenster";
+
+/* Class = "NSMenuItem"; title = "Matches"; ObjectID = "xJm-cu-uK5"; */
+"xJm-cu-uK5.title" = "Matches";
+
+/* Class = "NSMenuItem"; title = "Undo"; ObjectID = "xrp-dh-kqt"; */
+"xrp-dh-kqt.title" = "Undo";
+
+/* Class = "NSMenuItem"; title = "Tournament Hilfe"; ObjectID = "yFE-cE-qsA"; */
+"yFE-cE-qsA.title" = "Tournament Hilfe";
+
+/* Class = "NSMenuItem"; title = "Startliste"; ObjectID = "z8T-WH-0EK"; */
+"z8T-WH-0EK.title" = "Startliste";
+
+/* Class = "NSMenuItem"; title = "Zuletzt verwendet"; ObjectID = "zQI-em-7In"; */
+"zQI-em-7In.title" = "Zuletzt verwendet";
+
+/* Class = "NSMenuItem"; title = "Öffnen..."; ObjectID = "zSx-fy-Nws"; */
+"zSx-fy-Nws.title" = "Öffnen...";
+
+/* Class = "NSMenuItem"; title = "Statistics"; ObjectID = "snl-pO-vG5"; */
+"snl-pO-vG5.title" = "Statistik";
+
+/* Searchfield placeholder" */
+"Z3d-5X-a7c.placeholder" = "Spieler oder Match suchen";

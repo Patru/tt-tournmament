@@ -1,0 +1,58 @@
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "5"; */
+"5.title" = "Box";
+
+/* Class = "NSWindow"; title = "Panel"; ObjectID = "7"; */
+"7.title" = "Panel";
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "8"; */
+"8.title" = "Box";
+
+/* Class = "NSFormCell"; title = "Name:"; ObjectID = "82"; */
+"82.title" = "Name:";
+
+/* Class = "NSFormCell"; title = "Kürzel:"; ObjectID = "83"; */
+"83.title" = "Kürzel:";
+
+/* Class = "NSFormCell"; title = "Geschlecht:"; ObjectID = "84"; */
+"84.title" = "Geschlecht:";
+
+/* Class = "NSFormCell"; title = "Minimum:"; ObjectID = "85"; */
+"85.title" = "Minimum:";
+
+/* Class = "NSFormCell"; title = "Maximum:"; ObjectID = "86"; */
+"86.title" = "Maximum:";
+
+/* Class = "NSFormCell"; title = "Field:"; ObjectID = "121"; */
+"121.title" = "Field:";
+
+/* Class = "NSFormCell"; title = "Spiele:"; ObjectID = "126"; */
+"126.title" = "Spiele:";
+
+/* Class = "NSFormCell"; title = "nicht begonnen:"; ObjectID = "127"; */
+"127.title" = "nicht begonnen:";
+
+/* Class = "NSFormCell"; title = "Gruppen:"; ObjectID = "128"; */
+"128.title" = "Gruppen:";
+
+/* Class = "NSFormCell"; title = "nicht begonnen:"; ObjectID = "129"; */
+"129.title" = "nicht begonnen:";
+
+/* Class = "NSFormCell"; title = "weiteste Runde:"; ObjectID = "130"; */
+"130.title" = "weiteste Runde:";
+
+/* Class = "NSFormCell"; title = "Field:"; ObjectID = "131"; */
+"131.title" = "Field:";
+
+/* Class = "NSFormCell"; title = "früheste Runde:"; ObjectID = "132"; */
+"132.title" = "früheste Runde:";
+
+/* Class = "NSButtonCell"; title = "offene Gruppen einzeln spielen"; ObjectID = "134"; */
+"134.title" = "offene Gruppen einzeln spielen";
+
+/* Class = "NSFormCell"; title = "Spieler:"; ObjectID = "138"; */
+"138.title" = "Joueur:";
+
+/* Class = "NSFormCell"; title = "best of 7:"; ObjectID = "HGN-RJ-Tjv"; */
+"HGN-RJ-Tjv.title" = "best-of-7:";
+

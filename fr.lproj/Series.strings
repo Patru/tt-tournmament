@@ -1,0 +1,54 @@
+
+/* Class = "NSWindow"; title = "Serien im Turnier"; ObjectID = "6"; */
+"6.title" = "Séries du tournoi";
+
+/* Class = "NSWindow"; title = "Positionen umstellen"; ObjectID = "24"; */
+"24.title" = "Permuter positions";
+
+/* Class = "NSMenu"; title = "OtherViews"; ObjectID = "69"; */
+"69.title" = "OtherViews";
+
+/* Class = "NSMenuItem"; title = "alle"; ObjectID = "71"; */
+"71.title" = "tous";
+
+/* Class = "NSMenuItem"; title = "So"; ObjectID = "72"; */
+"72.title" = "Di";
+
+/* Class = "NSButtonCell"; title = "Anzeigen"; ObjectID = "115"; */
+"115.title" = "Afficher";
+
+/* Class = "NSButtonCell"; title = "Auslosen"; ObjectID = "116"; */
+"116.title" = "Tirage";
+
+/* Class = "NSButtonCell"; title = "Drucken"; ObjectID = "117"; */
+"117.title" = "Imprimer";
+
+/* Class = "NSButtonCell"; title = "Anfangen"; ObjectID = "118"; */
+"118.title" = "Commencer";
+
+/* Class = "NSButtonCell"; title = "Umstellen"; ObjectID = "119"; */
+"119.title" = "Permuter";
+
+/* Class = "NSButtonCell"; title = "Rangliste"; ObjectID = "120"; */
+"120.title" = "Classement";
+
+/* Class = "NSButtonCell"; title = "alle Zettel"; ObjectID = "121"; */
+"121.title" = "toutes les feuilles";
+
+/* Class = "NSButtonCell"; title = "Clubwertung"; ObjectID = "122"; */
+"122.title" = "évalutation clubs";
+
+/* Class = "NSButtonCell"; title = "save PDF"; ObjectID = "123"; */
+"123.title" = "Sauvegarde PDF";
+
+/* Class = "NSTextFieldCell"; title = "Position A"; ObjectID = "125"; */
+"125.title" = "Position A";
+
+/* Class = "NSTextFieldCell"; title = "Position B"; ObjectID = "126"; */
+"126.title" = "Position B";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "129"; */
+"129.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Abbruch"; ObjectID = "130"; */
+"130.title" = "Annuler";

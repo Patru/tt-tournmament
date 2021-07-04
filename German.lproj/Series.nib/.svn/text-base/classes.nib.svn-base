@@ -1,0 +1,38 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                allMatchSheets = id; 
+                allSingleResultsAsText = id; 
+                doTableDraw = id; 
+                draw = id; 
+                loadSeriesData = id; 
+                posCancel = id; 
+                posOk = id; 
+                printAllSeries = id; 
+                publishInscriptions = id; 
+                rankingList = id; 
+                saveSeriesAsPDF = id; 
+                selectSeries = id; 
+                setSeriesDataLoaded = id; 
+                show = id; 
+                showPositions = id; 
+                start = id; 
+                testSeriesForWO = id; 
+            }; 
+            CLASS = SeriesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                loadSeriesItem = NSMenuItem; 
+                posA = id; 
+                posB = id; 
+                posWindow = id; 
+                seriesBrowser = id; 
+                seriesWindow = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

@@ -1,0 +1,117 @@
+
+/* Class = "NSTextFieldCell"; title = "Datum der Serien im Export"; ObjectID = "1F7-yI-Kdc"; */
+"1F7-yI-Kdc.title" = "Datum der Serien im Export";
+
+/* Class = "NSTextFieldCell"; title = "Email Adresse"; ObjectID = "1i0-qq-PFz"; */
+"1i0-qq-PFz.title" = "Email Adresse";
+
+/* Class = "NSTextFieldCell"; title = "Turniertitel"; ObjectID = "3Y6-g2-4Nt"; */
+"3Y6-g2-4Nt.title" = "Turniertitel";
+
+/* Class = "NSTextFieldCell"; title = "Hoch"; ObjectID = "4HS-5o-kGE"; */
+"4HS-5o-kGE.title" = "Hoch";
+
+/* Class = "NSButtonCell"; title = "andere Matches"; ObjectID = "57b-1k-hk9"; */
+"57b-1k-hk9.title" = "andere Matches";
+
+/* Class = "NSButtonCell"; title = "setzen"; ObjectID = "5pC-ej-BkF"; */
+"5pC-ej-BkF.title" = "setzen";
+
+/* Class = "NSTextFieldCell"; title = "Tisch"; ObjectID = "61c-JW-99u"; */
+"61c-JW-99u.title" = "Tisch";
+
+/* Class = "NSButtonCell"; title = "Schiedsrichter"; ObjectID = "6TG-nk-okR"; */
+"6TG-nk-okR.title" = "Schiedsrichter";
+
+/* Class = "NSButtonCell"; title = "setzen"; ObjectID = "7OR-A3-zsp"; */
+"7OR-A3-zsp.title" = "setzen";
+
+/* Class = "NSButtonCell"; title = "exakte Resultate"; ObjectID = "8M1-cB-Ja8"; */
+"8M1-cB-Ja8.title" = "exakte Resultate";
+
+/* Class = "NSTextFieldCell"; title = "Upload\n"; ObjectID = "8Zh-TN-1H4"; */
+"8Zh-TN-1H4.title" = "Upload\n";
+
+/* Class = "NSTextFieldCell"; title = "Quer"; ObjectID = "BN1-U8-9fe"; */
+"BN1-U8-9fe.title" = "Quer";
+
+/* Class = "NSButtonCell"; title = "direkt drucken"; ObjectID = "F6f-4T-402"; */
+"F6f-4T-402.title" = "direkt drucken";
+
+/* Class = "NSTextFieldCell"; title = "bis"; ObjectID = "FT8-xf-z3w"; */
+"FT8-xf-z3w.title" = "bis";
+
+/* Class = "NSTextFieldCell"; title = "Erstes"; ObjectID = "H2b-Jn-Eaf"; */
+"H2b-Jn-Eaf.title" = "Erstes";
+
+/* Class = "NSTextFieldCell"; title = "Untertitel"; ObjectID = "KDT-Yb-Fvf"; */
+"KDT-Yb-Fvf.title" = "Untertitel";
+
+/* Class = "NSTextFieldCell"; title = "Verbände"; ObjectID = "LoF-mp-Uug"; */
+"LoF-mp-Uug.title" = "Verbände";
+
+/* Class = "NSTextFieldCell"; title = "Werbung"; ObjectID = "UvI-cW-a5U"; */
+"UvI-cW-a5U.title" = "Werbung";
+
+/* Class = "NSTextFieldCell"; title = "OSR"; ObjectID = "Vxa-LX-mUw"; */
+"Vxa-LX-mUw.title" = "OSR";
+
+/* Class = "NSTextFieldCell"; title = "Typ"; ObjectID = "Xcb-ly-qh8"; */
+"Xcb-ly-qh8.title" = "Typ";
+
+/* Class = "NSTextFieldCell"; title = "Click-TT ID\n"; ObjectID = "YYA-8J-nxV"; */
+"YYA-8J-nxV.title" = "Click-TT ID\n";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "ZwW-2l-2bt"; */
+"ZwW-2l-2bt.title" = "Präferenzen";
+
+/* Class = "NSButtonCell"; title = "Zurück"; ObjectID = "bxr-gg-agJ"; */
+"bxr-gg-agJ.title" = "Zurück";
+
+/* Class = "NSButtonCell"; title = "Schiedsrichter"; ObjectID = "fV2-mG-DOf"; */
+"fV2-mG-DOf.title" = "Schiedsrichter";
+
+/* Class = "NSTextFieldCell"; title = "Papier hoch"; ObjectID = "i66-Bp-fg2"; */
+"i66-Bp-fg2.title" = "Papier hoch";
+
+/* Class = "NSButtonCell"; title = "Gruppendetails"; ObjectID = "jC2-49-pt3"; */
+"jC2-49-pt3.title" = "Gruppendetails";
+
+/* Class = "NSTextFieldCell"; title = "Spiele"; ObjectID = "lKq-Oo-EZ5"; */
+"lKq-Oo-EZ5.title" = "Spiele";
+
+/* Class = "NSTextFieldCell"; title = "Datum von"; ObjectID = "lgR-d2-PeG"; */
+"lgR-d2-PeG.title" = "Datum von";
+
+/* Class = "NSButtonCell"; title = "setzen"; ObjectID = "nKW-d8-10A"; */
+"nKW-d8-10A.title" = "setzen";
+
+/* Class = "NSButtonCell"; title = "Gruppen mit Buchstaben"; ObjectID = "o9h-mX-aMC"; */
+"o9h-mX-aMC.title" = "Gruppen mit Buchstaben";
+
+/* Class = "NSButtonCell"; title = "Speichern"; ObjectID = "qbU-5H-aN9"; */
+"qbU-5H-aN9.title" = "Speichern";
+
+/* Class = "NSTextFieldCell"; title = "Datum"; ObjectID = "qkz-bF-XWK"; */
+"qkz-bF-XWK.title" = "Datum";
+
+/* Class = "NSTextFieldCell"; title = "Region"; ObjectID = "vaz-bL-gz4"; */
+"vaz-bL-gz4.title" = "Region";
+
+/* Class = "NSTextFieldCell"; title = "Papier quer"; ObjectID = "wht-WT-zz0"; */
+"wht-WT-zz0.title" = "Papier quer";
+
+/* Class = "NSButtonCell"; title = "Spielnummern"; ObjectID = "y2b-Iw-zLN"; */
+"y2b-Iw-zLN.title" = "Spielnummern";
+
+/* Class = "NSTextFieldCell"; title = "Depot für Startnummer"; ObjectID = "yyH-Vc-gil"; */
+"yyH-Vc-gil.title" = "Depot für Startnummer";
+
+/* Class = "NSTextFieldCell"; title = "TurnierID"; ObjectID = "z3S-wb-SQm"; */
+"z3S-wb-SQm.title" = "TurnierID";
+
+/* Class = "NSButtonCell"; title = "Tabellen Querformat"; ObjectID = "zKq-TM-veE"; */
+"zKq-TM-veE.title" = "Tabellen Querformat";
+
+/* Class = "NSTextFieldCell"; title = "Breite"; ObjectID = "zmH-Bo-ZfU"; */
+"zmH-Bo-ZfU.title" = "Breite";

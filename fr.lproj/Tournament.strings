@@ -1,0 +1,184 @@
+/* Format für Beste Klassierung */
+"BesteKlassierungFormat" = "Meilleur classement: %d";
+
+/* Format für Blattnummer */
+"BlattFormat" = "Page %d";
+
+"DatumZeitFormat" = "%@; %@h";
+
+/* Format für Beste Klassierung */
+"OSRFormat" = "JA: %@";
+
+/* Text für Rangliste */
+"Rangliste" = "Classement";
+
+/* Format für Verbände */
+"VerbaendeFormat" = "Associations: %@";
+
+/* Format für Anzahl Paare */
+"Anzahl Paare: %d" = "Nombre de paires: %d";
+
+/* Format für Anzahl Spieler */
+"Anzahl Spieler: %d" = "Nombre de joueurs: %d";
+
+/* Format für Anzahl Spielerinnen */
+"Anzahl Spielerinnen: %d" = "Nombre de joueuses: %d";
+
+/* Format für Gruppe auf Turniertabelle */
+"Gruppe %@" = "Groupe %@";
+
+/* Altersserie für Zahlung */
+"Altersserie" = "Catégorie d'âge";
+
+/* Damen Einzel für Zahlung */
+"Damen Einzel" = "Simple Dames";
+
+/* Doppel für Zahlung */
+"Doppel" = "Double";
+
+/* Herren Einzel für Zahlung */
+"Herren Einzel" = "Simple Messieurs";
+
+/* Totalbetrag für Zahlung */
+"Totalbetrag" = "Montant total";
+
+/* Turnierkarte STT für Zahlung */
+"Turnierkarte STT" = "Carte de tournoi STT / Dossard";
+
+"Alle Serien auslosen" = "Tirage au sort de toutes les séries";
+"Sollen jetzt alle Serien ausgelost werden?" = "Tirage au sort de toutes les séries maintenant?";
+"Ja" = "Oui";
+"yes" = "Oui";
+"Nein" = "Non";
+"no" = "Non";
+"Alle Serien drucken" = "Imprimer toutes les séries";
+"Welche Serien drucken?" = "Imprimer quelles séries?";
+"Alle" = "Toutes";
+"Nur laufende" = "Seulement les séries en cours";
+"Abbrechen" = "Annuler";    /* TODO: delete */
+"abort" = "Abort";
+"wirklich zurueckziehen" = "Vraiment retirer?";
+"Sicher?" = "Sûr?";
+"Alle WO Spieler ueberprueft?" = "Vérifié tous les joueurs WO?";
+"Ja, anfangen" = "Oui, commence";
+"Nein! Warte noch" = "Non! Attends";
+"Anmeldungen" = "Inscriptions";
+"Stand" = "Etat";
+"total" = "total";
+", total %d Anmeldungen" = ", total %d inscriptions";
+"%d Spieler und %d Anmeldungen am %@" = "%d joueurs et %d inscriptions le %@";
+"Anmeldungsdaten automatisch" = "Ce fichier a été généré de manière automatique à partir des inscriptions enregistrées.";
+"Fehler melden" = "Annoncez les erreurs et les oublis aussi rapidement que possible à %@, car ";
+"nur aufgefuehrt ausgelost" = "<b>seuls</b> les joueurs apparaissant dans cette liste seront tirés au sort.";
+"Serien" = "Séries";
+"Position" = "Position";
+"Name" = "Nom";
+"Club" = "Club";
+"Klassierung" = "Classement";
+"Ranking-Position" = "position-<br>ranking";
+"gesetzt als" = "placé";
+"loeschen" = "Supprimer";
+"GruppenGroesse" = "La série %@ a des groupes de 0 \n(J'utilise par défaut 3)";
+"homogenes Mixed" = "%@ et %@ forment un double homogène. Participation au double mixte impossible!";
+"zaehlt Match" = "arbitre la partie:";
+"spielt Match" = "joue la partie:";
+"kann zaehlen" = "peut compter:";
+"Lizenz aendern" = "Le numéro de licence ne peut pas être\nmodifié dans l'inspecteur";
+"zaehlen vor fertig" = "Ne peut pas arbitrer une nouvelle partie \ntant que la précédente n'est pas terminée";
+"Tisch loeschen" = "Supprimer table %d?";
+"nur jetzt" = "Provisoirement";
+"MatchAufTischFormat" = "%d sur T%@";
+"availableMatches" = "Parties possibles";
+"runningMatches" = "Parties en cours";
+"reassign" = "Assigner de nouveau";
+"availableTables" = "Tables utilisable";
+"Leere Tische" = "Tables libres";
+"verfuegbare Schiedsrichter" = "Arbitres disponibles";
+"Sieger" = "Vainqueur";
+"Verlierer" = "Perdant";
+"spielt noch" = "Joue encore";
+"Gruppenspiele" = "Poule";
+"abgemeldete Spieler" = "Joueurs retirés";
+"WO Spieler" = "Joueurs WO";
+"Vorsicht!" = "Attention!";
+"Recovery-Daten vorhanden!" = "Données récupérées disponibles";
+"benutzen" = "Utiliser";
+"Wirklich alle Tische freigeben?!" = "Libérer vraiment toutes les tables?";
+"reallyFreeAllTables" = "Libérer vraiment toutes les tables?";
+"Achtung!" = "Attention!";
+"caution" = "Attention!";
+"Aus der Datenbank" = "De la banque de données";
+"WO" = "WO";
+"%@ wurde im Doppel ersetzt, er ist" = "%@ a été remplacé en double, il est";
+"nicht da" = "absent";
+"abgemeldet" = "retiré";
+"hier" = "ici";
+"Halt!" = "Halte!";
+"Ok" = "Ok";
+"%@ wurde ersetzt, er ist" = "%@ a été remplacé, il est";
+"Fehler!" = "Erreur!";
+"%@ nicht in diesem Match" = "%@ pas dans cette partie";
+"Oohh" = "Oohh";
+"Spieler %@\nnicht im Match %ld" = "Joueur %@\nn'est pas dans la partie %ld,\nlre résultat est ignoré";
+"Match %ld fehlt in der Auslosung!" = "La partie %ld n'est pas présent dans le tirage au sort!";
+/* Ein Spieler hat wo verloren, jetzt wird gefragt: "Spieler X ist" (nicht da, abgemeldet, hier) */
+"%@ ist" = "%@ est";
+"Falscher Sieger" = "Vainqueur incorrect";
+"Spiel Nummer %d nicht\nausgetragen!?" = "Partie numéro %d pas\njouée!?";
+"Ich versuchs nochmal" = "J'essaie encore une fois";
+"canntDoThis" = "Dans ce cas, je ne peux pas le faire.";
+"Serie noch nicht ausgelost" = "Série %@ pas encore tirée au sort";
+"Trotzdem darstellen" = "Représenter quand même";
+"Neu erfassen" = "Saisir à nouveau";
+"Resultat bereits erfasst." = "Résultat déjà enregistré:\nVainqueur: %@; %@";
+"Trotzdem erfassen" = "Saisir quand même";
+"Konflikt!" = "Conflit!";
+"%@ hat noch einen\nSchiedsrichtereinsatz" = "%@ doit encore arbitrer";
+"Spiel" = "Partie";
+"Schiedsrichter" = "Arbitre";
+"%@ fordert %d Tische an\nes sind aber nur %d selektiert" = "%@ a besoin de %d tables\nIl n'y en a que %d sélectionnée(s)";
+"Zu wenige Tische" = "Pas assez de tables";
+"Vorbestimmter Tisch" = "Table destinée";    /* TODO: delete */
+"predeterminedTable" = "Table destinée";
+"Passt nicht zu" = "Table %d configurée\nne convient pas à la table %d choisi"; /* TODO: delete */
+"doesNotFit" = "Table %d configurée\nne convient pas à la table %d choisi";
+"Neu zuweisen" = "Assigner de nouveau";
+"mit weniger Tischen spielen" = "Jouer sur moins de tables";
+"Serie bereits gestartet" = "Série déjà commencée";
+"Keine Serie gewaehlt" = "Aucune série sélectionnée";
+"Serie bereits begonnen,\nkeine weiteren Wechsel möglich." = "La série a déjà commencé,\nplus de changement possible.";
+"Serie noch nicht fertig" = "Série encore en cours";
+"Die Serie hat bereits ein Tableau" = "La série a déjà un tableau";
+"Partner %d nicht gefunden\nSpieler %d" = "Partenaire %d pas trouvé\nJoueur %d";
+"Lizenznummer %d nicht gefunden" = "Numéro de licence %d pas trouvé";
+"Position Nummer %d existiert nicht" = "La position numéro %d n'existe pas";
+"Verdoppeln nur in erster Runde\nzulässig" = "Doubler autorisé seulement\ndans le premier tour";
+"%@ kann nicht mit sich selber Mixed spielen." = "%@ ne peut pas être son propre partenaire en double mixte.";
+"%@ ist offen angemeldet\n(nicht als Partner von %@)" = "%@ est inscrit libre\n(pas comme partenaire de %@)"; 
+"%@ hat schon einen Doppelpartner\n(%@), neu: %@" = "%@ a déjà un partenaire de double\n(%@), nouveau: %@";
+"%@ kann nicht mit sich selber Doppel spielen." = "%@ ne peut pas être son propre partenaire en double.";
+"Soll das darauffolgende, laufende Spiel\n%@ : %@\nzurückgezogen werden?" = "La partie en cours suivante:\n%@ : %@\ndoit-elle être retirée?";
+"Nein, direkt ersetzen" = "Non, remplacer directement";
+"%@ hat seinen letzten\nMatch WO verloren. Jetzt ist der" = "%@ a perdu sa dernière\npartie par WO. Il est";
+"Match WO" = "Partie WO";
+"Spieler wieder da" = "Joueur de retour";
+"%@ nicht in diesem Match!" = "%@ pas dans cette partie!";
+"Die Serie\n%@\n wurde bereits ausgelost" = "La série\n%@\n a déjà été tirée au sort";
+"Nochmal" = "Encore une fois";
+"Offen gemeldet" = "Joueurs libres";
+"(werden bei der Auslosung von oben herab zusammengelost)" = "(lors du tirage au sort, les paires seront formées dans l’ordre des classements décroissants, par tirage au sort en cas d’égalité de classement)";
+"Spiel wurde noch nicht gestartet" = "Cette partie n'a pas encore commencé";
+"Spiel existiert nicht!" = "Cette partie n'existe pas!";
+"Gruppe %ld Platz %ld" = "groupe %ld place %ld";
+"%ld. Platz Gruppe %c" = "%ld place groupe %c";
+"drawingErrorsSeries" = "Erreurs pendent le tirage au sort de %@!";
+"IWouldLikeToCorrectThis" = "J'aimerais bien corriger ça";
+"DoubleFormat" = "Double: \t%@\t%@\t%ld\n    et\t%@\t%@\t%ld\n";
+"SameClubForced" = "le même club a été forcé\n";
+"SeriesFormat" = "Série: %@\n";
+"CouldNotAssignFormat" = "non assigné:\t%@\t%@\t%ld\n";
+"CouldNotAssignManFormat" = "homme non assigné:\t%@\t%@\t%ld\n";
+"CouldNotAssignWomanFormat" = "famme non assigné:\t%@\t%@\t%ld\n";
+"attendingPlayersAvailable" = "J'ai trouvé des joueurs attendant dans la base des données";
+"paymentsAvailable" = "J'ai trouvé paymnents dans la base des données";
+"Wiederverwenden" = "Utiliser";

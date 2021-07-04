@@ -1,0 +1,25 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                ok = id; 
+                revert = id; 
+                showMatchInspector = id; 
+                showPlayerInspector = id; 
+                updateView = id; 
+            }; 
+            CLASS = TournamentInspectorController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                contentsBox = NSBox; 
+                defaultView = NSView; 
+                popup = NSPopUpButton; 
+                view = NSView; 
+                window = NSWindow; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

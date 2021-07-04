@@ -1,0 +1,29 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = InspectorController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {insertMatch = id; inspectPlayer = id; }; 
+            CLASS = MatchInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                infoForm = NSForm; 
+                lowerInfoForm = NSForm; 
+                lowerPriority = NSTextField; 
+                lowerRanking = NSTextField; 
+                matchView = NSView; 
+                playerView = NSView; 
+                series = NSTextField; 
+                setsForm = NSForm; 
+                upperInfoForm = NSForm; 
+                upperPriority = NSTextField; 
+                upperRanking = NSTextField; 
+                winnerLicence = NSTextField; 
+                winnerName = NSTextField; 
+                woButton = NSButton; 
+            }; 
+            SUPERCLASS = InspectorController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

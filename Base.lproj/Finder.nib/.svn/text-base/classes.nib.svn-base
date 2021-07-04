@@ -1,0 +1,13 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {findMatch = id; findPlayer = id; showFinder = id; }; 
+            CLASS = FinderController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {playerField = NSTextField; window = NSWindow; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}

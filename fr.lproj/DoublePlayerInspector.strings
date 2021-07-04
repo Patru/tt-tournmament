@@ -1,0 +1,48 @@
+
+/* Class = "NSBox"; title = "Box"; ObjectID = "21"; */
+"21.title" = "Box";
+
+/* Class = "NSBox"; title = "Player"; ObjectID = "40"; */
+"40.title" = "Joueur";
+
+/* Class = "NSWindow"; title = "Panel"; ObjectID = "52"; */
+"52.title" = "Panel";
+
+/* Class = "NSFormCell"; title = "Spielpass:"; ObjectID = "53"; */
+"53.title" = "Licence:";
+
+/* Class = "NSFormCell"; title = "Name:"; ObjectID = "54"; */
+"54.title" = "Nom:";
+
+/* Class = "NSFormCell"; title = "Club:"; ObjectID = "55"; */
+"55.title" = "Club:";
+
+/* Class = "NSFormCell"; title = "Klassierung:"; ObjectID = "56"; */
+"56.title" = "Classement:";
+
+/* Class = "NSFormCell"; title = "Klassierung:"; ObjectID = "58"; */
+"58.title" = "Classement:";
+
+/* Class = "NSFormCell"; title = "Name:"; ObjectID = "59"; */
+"59.title" = "Nom:";
+
+/* Class = "NSBox"; title = "Partner"; ObjectID = "60"; */
+"60.title" = "Partenaire";
+
+/* Class = "NSFormCell"; title = "Spielpass:"; ObjectID = "61"; */
+"61.title" = "Spielpass:";
+
+/* Class = "NSFormCell"; title = "Club:"; ObjectID = "63"; */
+"63.title" = "Club:";
+
+/* Class = "NSButtonCell"; title = "inspizieren"; ObjectID = "85"; */
+"85.title" = "inspecter";
+
+/* Class = "NSButtonCell"; title = "inspizieren"; ObjectID = "86"; */
+"86.title" = "inspecter";
+
+/* Class = "NSFormCell"; title = "Field:"; ObjectID = "87"; */
+"87.title" = "Field:";
+
+/* Class = "NSFormCell"; title = "Field:"; ObjectID = "88"; */
+"88.title" = "Field:";

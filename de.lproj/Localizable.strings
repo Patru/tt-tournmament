@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  Tournament
+
+  Created by Paul Trunz on 11.06.17.
+
+*/
+
+/* alert title after loading palyers from click-tt */
+"clickTtLoaded" = "Spieler von Click-TT geladen";
+/* import activity while downloading the file from click-tt */
+"downloadingFile" = "Lade Datei von Click-TT";
+/* import activity while unzipping the file */
+"unzippingFile" = "Datei entpacken";
+/* import activity while counting the lines from click-tt */
+"countingLines" = "Zähle Zeilen";
+/* import activity while parsing lines from click-tt */
+"parsingLines" = "Erzeuge Spieler aus %d Zeilen";
+/* alert info change in the number of players from click-tt */
+"playersBeforeAfter" = "Anzahl Spieler davor: %d\ndanach: %d";
+/* alert title after a series is finished */
+"SerieBeendet" = "Serie beendet";
+/* alert info, format after last match has been played, series full name as argument */
+ "letztesSpielGespielt" = "Das letzte Spiel der Serie %@ wurde gespielt";
+ /* alert button for showing the ranking list */
+"RanglisteDrucken" = "Rangliste drucken";
+/* alert button for not showing the ranking list */
+"merksMirSo" = "Merk ich mir so.";
+/* alert message text for errors */
+"error" = "Fehler";
+/* alert message text for warnings */
+"warning" = "Vorsicht";
+/* alert message text for completed tasks */
+"completed" = "Abgeschlossen";
+/* alert button ok */
+"ok" = "Okay";
+/* alert informational message when the tournament could not be found */
+"tournamentWithIdNotFound" = "Turnier mit ID %@ nicht auffindbar";
+/* alert informational message upon completion of entries import */
+"entryImportCompleted" = "Import von Einträgen abgeschlossen:\n%d bestehende Einträge ersetzt durch %d neue.\n";
+/* alert informational message part when some series were missing */
+"undefinedSeriesLoaded" = "Vorsicht: Einträge für die folgenden undefinierten Serien erhalten:\n";
+/* alert informational message when an unknown mime-type was received */
+"unknownTypeReceived" = "Vorsicht: Unbekannten MIME-type %@ erhalten";
+/* alert informational message when an HTTP error occurred during a request */
+"httpError" = "Fehler: HTTP Fehler %@ erhalten";
+/* alert informational message when the HTTP request failed, likely because of a faulty/missing API-key */
+"failedConsiderSettingUpApiKey" = "Fehler: Einträge konnten nicht geladen werden, bitte API-key (neu) setzten.";
+/* alert informational message when the HTTP request failed with response code 500, check it out on the server */
+"failureOnServer" = "Fehler: Einschreibungen konnten wegen eines Sever-Fehlers nicht geladen werden, bitte log überprüfen";
+/* alert informational message when entries for all series were imported successfully */
+"seriesImportedSuccessfully" = "Folgende Einträge wurden erfolgreich importiert:\n";

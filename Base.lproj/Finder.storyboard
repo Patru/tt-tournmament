@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Finder Controller-->
+        <scene sceneID="o0R-D2-nLn">
+            <objects>
+                <windowController storyboardIdentifier="Finder Controller" showSeguePresentationStyle="single" id="uwU-o4-RNL" userLabel="Finder Controller" customClass="FinderController" customModule="Tournament_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="NNb-RY-oYb">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="526" width="329" height="141"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+                    </window>
+                    <connections>
+                        <segue destination="5oj-h1-7rZ" kind="relationship" relationship="window.shadowedContentViewController" id="ErY-bu-5Xr"/>
+                    </connections>
+                </windowController>
+                <customObject id="nrN-hI-ISH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51.5" y="138.5"/>
+        </scene>
+        <!--Finder View Controller-->
+        <scene sceneID="CP4-5a-JI7">
+            <objects>
+                <viewController id="5oj-h1-7rZ" customClass="FinderViewController" customModule="Tournament_C" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="rfy-aA-8jG">
+                        <rect key="frame" x="0.0" y="0.0" width="229" height="160"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZS-ve-EMe">
+                                <rect key="frame" x="40" y="123" width="149" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Find players or matches" id="MTP-53-8MV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QKz-KY-bSW">
+                                <rect key="frame" x="20" y="61" width="189" height="54"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zt-WY-jhh">
+                                        <rect key="frame" x="0.0" y="30" width="189" height="24"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4GW-OE-Xqd">
+                                                <rect key="frame" x="-2" y="4" width="107" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Match (Number):" id="KVq-yU-AO7">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLO-ps-DfZ">
+                                                <rect key="frame" x="111" y="1" width="78" height="22"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="IUW-xj-Itr">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="findMatch:" target="5oj-h1-7rZ" id="fTO-bD-69c"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" ambiguous="YES" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ttd-h0-NDq">
+                                        <rect key="frame" x="0.0" y="0.0" width="189" height="22"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXU-74-ZwX">
+                                                <rect key="frame" x="-2" y="3" width="107" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Player (Licence):" id="q2C-rC-KZM">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" ambiguous="YES" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qT7-19-JZb">
+                                                <rect key="frame" x="111" y="0.0" width="78" height="22"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="9eb-qK-X6N">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                                <connections>
+                                                    <action selector="findPlayer:" target="5oj-h1-7rZ" id="Bjb-Hg-qiY"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="qT7-19-JZb" firstAttribute="width" secondItem="OLO-ps-DfZ" secondAttribute="width" id="5BR-pi-ihc"/>
+                                    <constraint firstItem="uXU-74-ZwX" firstAttribute="width" secondItem="4GW-OE-Xqd" secondAttribute="width" id="7Gc-4i-2fE"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="q4b-oy-QLa">
+                                <rect key="frame" x="71" y="13" width="87" height="32"/>
+                                <buttonCell key="cell" type="push" title="Dismiss" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="3Q7-pa-aLI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="dismiss:" target="5oj-h1-7rZ" id="H4o-xE-dgb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="bZS-ve-EMe" firstAttribute="centerX" secondItem="rfy-aA-8jG" secondAttribute="centerX" id="2Jp-Tn-YNR"/>
+                            <constraint firstItem="q4b-oy-QLa" firstAttribute="top" secondItem="QKz-KY-bSW" secondAttribute="bottom" constant="20" id="7us-VG-zQn"/>
+                            <constraint firstItem="QKz-KY-bSW" firstAttribute="top" secondItem="bZS-ve-EMe" secondAttribute="bottom" constant="8" id="CFZ-6A-wV1"/>
+                            <constraint firstItem="q4b-oy-QLa" firstAttribute="centerX" secondItem="rfy-aA-8jG" secondAttribute="centerX" id="IhV-C5-AxG"/>
+                            <constraint firstAttribute="trailing" secondItem="QKz-KY-bSW" secondAttribute="trailing" constant="20" id="InH-XE-fQT"/>
+                            <constraint firstItem="bZS-ve-EMe" firstAttribute="top" secondItem="rfy-aA-8jG" secondAttribute="top" constant="20" id="LEo-qm-WxA"/>
+                            <constraint firstItem="QKz-KY-bSW" firstAttribute="leading" secondItem="rfy-aA-8jG" secondAttribute="leading" constant="20" id="oz1-mc-KeY"/>
+                            <constraint firstAttribute="bottom" secondItem="q4b-oy-QLa" secondAttribute="bottom" constant="20" id="tGi-8Q-1gW"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="y49-M3-pVQ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74.5" y="453"/>
+        </scene>
+    </scenes>
+</document>

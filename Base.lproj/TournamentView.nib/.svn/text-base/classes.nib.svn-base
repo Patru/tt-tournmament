@@ -1,0 +1,27 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {drawTournament = id; }; 
+            CLASS = TournamentView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {delegate = id; series = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {print = id; show = id; }; 
+            CLASS = TournamentViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {scrollView = id; tournamentViewWindow = id; }; 
+            SUPERCLASS = NSResponder; 
+        }, 
+        {
+            ACTIONS = {print = id; }; 
+            CLASS = TournamentViewWindow; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {controller = id; }; 
+            SUPERCLASS = NSWindow; 
+        }
+    ); 
+    IBVersion = 1; 
+}

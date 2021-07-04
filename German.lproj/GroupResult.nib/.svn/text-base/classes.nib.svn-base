@@ -1,0 +1,41 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                matchAbort = id; 
+                oneMatchAbort = id; 
+                oneMatchOk = id; 
+                play = id; 
+                posAbort = id; 
+                rank = id; 
+                rankAbort = id; 
+                rankDecided = id; 
+                results = id; 
+                saveMatches = id; 
+                selectWinner = id; 
+            }; 
+            CLASS = GroupResult; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                eightTable = id; 
+                lowerName = id; 
+                lowerTitle = id; 
+                matchMatrix = id; 
+                matches = id; 
+                oneMatch = id; 
+                playerPos = id; 
+                players = id; 
+                positions = id; 
+                resultList = id; 
+                resultText = id; 
+                setResult = id; 
+                thisGroup = id; 
+                upperName = id; 
+                upperTitle = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

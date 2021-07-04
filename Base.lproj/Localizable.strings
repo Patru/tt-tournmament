@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  Tournament
+
+  Created by Paul Trunz on 11.06.17.
+
+*/
+
+/* alert title after loading palyers from click-tt */
+"clickTtLoaded" = "Players loaded from Click-TT";
+/* import activity while downloading the file from click-tt */
+"downloadingFile" = "Downloading file from Click-TT";
+/* import activity while unzipping the file */
+"unzippingFile" = "Decompressing file";
+/* alert info change in the number of players from click-tt */
+"playersBeforeAfter" = "Number of players before: %d\nafter: %d";
+/* import activity while counting the lines from click-tt */
+"countingLines" = "Counting lines";
+/* import activity while parsing lines from click-tt */
+"parsingLines" = "creating players from %d lines";
+/* alert title after a series is finished */
+"SerieBeendet" = "Series is finished";
+/* alert info, format after last match has been played, series full name as argument */
+"letztesSpielGespielt" = "The final match of %@ has been played";
+/* alert button for showing the ranking list */
+"RanglisteDrucken" = "Print ranking list";
+/* alert button for not showing the ranking list */
+"merksMirSo" = "I'll keep it in mind";
+/* alert message text for errors */
+"error" = "Error";
+/* alert message text for warnings */
+"warning" = "Warning";
+/* alert message text for completed tasks */
+"completed" = "Completed";
+/* alert button ok */
+"ok" = "OK";
+/* alert informational message when the tournament could not be found */
+"tournamentWithIdNotFound" = "Tournament with id %@ not found";
+/* alert informational message upon completion of entries import */
+"entryImportCompleted" = "Import of entries completed:\n replaced %d entries\nby %d\n";
+/* alert informational message part when some series were missing */
+"undefinedSeriesLoaded" = "Warning: entries found for undefined series:";
+/* alert informational message when an unknown mime-type was received */
+"unknownTypeReceived" = "Warning: unknown MIME-type %@ received";
+/* alert informational message when an HTTP error occurred during a request */
+"httpError" = "Error: HTTP error %@ received";
+/* alert informational message when the HTTP request failed, likely because of a faulty/missing API-key */
+"failedConsiderSettingUpApiKey" = "Error: entries download failed, consider setting up your API-key";
+/* alert informational message when the HTTP request failed with response code 500, check it out on the server */
+"failureOnServer" = "Error: entries download failed because of server error, check log";
+/* alert informational message when entries for all series were imported successfully */
+"seriesImportedSuccessfully" = "Entries for the following series have been imported successfully:\n";

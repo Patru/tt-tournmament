@@ -1,0 +1,144 @@
+
+/* Class = "NSWindow"; title = "Ein Spiel"; ObjectID = "5"; */
+"5.title" = "Une Partie";
+
+/* Class = "NSTextFieldCell"; title = "1."; ObjectID = "25"; */
+"25.title" = "1.";
+
+/* Class = "NSTextFieldCell"; title = "2."; ObjectID = "27"; */
+"27.title" = "2.";
+
+/* Class = "NSTextFieldCell"; title = "3."; ObjectID = "28"; */
+"28.title" = "3.";
+
+/* Class = "NSTextFieldCell"; title = "4."; ObjectID = "29"; */
+"29.title" = "4.";
+
+/* Class = "NSTextFieldCell"; title = "5."; ObjectID = "30"; */
+"30.title" = "5.";
+
+/* Class = "NSTextFieldCell"; title = "6."; ObjectID = "31"; */
+"31.title" = "6.";
+
+/* Class = "NSTextFieldCell"; title = "7."; ObjectID = "32"; */
+"32.title" = "7.";
+
+/* Class = "NSWindow"; title = "Spielerpositionen"; ObjectID = "45"; */
+"45.title" = "Positions des joueurs";
+
+/* Class = "NSWindow"; title = "Matchauswertung Gruppe"; ObjectID = "78"; */
+"78.title" = "Evaluation parties du groupe";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "139"; */
+"139.title" = "Button";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "140"; */
+"140.title" = "Button";
+
+/* Class = "NSWindow"; title = "Rangliste"; ObjectID = "148"; */
+"148.title" = "Classement";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "168"; */
+"168.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "169"; */
+"169.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "170"; */
+"170.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "171"; */
+"171.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "172"; */
+"172.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "173"; */
+"173.title" = "Switch";
+
+/* Class = "NSTextFieldCell"; title = "a"; ObjectID = "182"; */
+"182.title" = "a";
+
+/* Class = "NSTextFieldCell"; title = "b"; ObjectID = "183"; */
+"183.title" = "b";
+
+/* Class = "NSTextFieldCell"; title = "c"; ObjectID = "184"; */
+"184.title" = "c";
+
+/* Class = "NSTextFieldCell"; title = "d"; ObjectID = "185"; */
+"185.title" = "d";
+
+/* Class = "NSTextFieldCell"; title = "e"; ObjectID = "186"; */
+"186.title" = "e";
+
+/* Class = "NSTextFieldCell"; title = "f"; ObjectID = "187"; */
+"187.title" = "f";
+
+/* Class = "NSTextFieldCell"; title = "Resultat exakt eingeben"; ObjectID = "216"; */
+"216.title" = "Introduire le résultat exact";
+
+/* Class = "NSTextFieldCell"; title = "Sieger"; ObjectID = "217"; */
+"217.title" = "Vainqueur";
+
+/* Class = "NSTextFieldCell"; title = "Verlierer"; ObjectID = "218"; */
+"218.title" = "Perdant";
+
+/* Class = "NSTextFieldCell"; title = "Title"; ObjectID = "219"; */
+"219.title" = "Title";
+
+/* Class = "NSTextFieldCell"; title = "Title"; ObjectID = "220"; */
+"220.title" = "Title";
+
+/* Class = "NSTextFieldCell"; title = "Sätze"; ObjectID = "221"; */
+"221.title" = "Sätze";
+
+/* Class = "NSButtonCell"; title = "Abbruch"; ObjectID = "222"; */
+"222.title" = "Anuler";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "223"; */
+"223.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Abbruch"; ObjectID = "224"; */
+"224.title" = "Anuler";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "225"; */
+"225.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Abbruch"; ObjectID = "226"; */
+"226.title" = "Anuler";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "227"; */
+"227.title" = "OK";
+
+/* Class = "NSButtonCell"; title = "Abbruch"; ObjectID = "228"; */
+"228.title" = "Anuler";
+
+/* Class = "NSButtonCell"; title = "OK"; ObjectID = "229"; */
+"229.title" = "OK";
+
+/* Class = "NSTextFieldCell"; title = "-27"; ObjectID = "230"; */
+"230.title" = "-27";
+
+/* Class = "NSTextFieldCell"; title = "1."; ObjectID = "231"; */
+"231.title" = "1.";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "232"; */
+"232.title" = "Switch";
+
+/* Class = "NSTextFieldCell"; title = "a"; ObjectID = "233"; */
+"233.title" = "a";
+
+/* Class = "NSButtonCell"; title = "Button"; ObjectID = "234"; */
+"234.title" = "Button";
+
+/* Class = "NSTextFieldCell"; title = "g"; ObjectID = "237"; */
+"237.title" = "g";
+
+/* Class = "NSTextFieldCell"; title = "h"; ObjectID = "238"; */
+"238.title" = "h";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "239"; */
+"239.title" = "Switch";
+
+/* Class = "NSButtonCell"; title = "Switch"; ObjectID = "240"; */
+"240.title" = "Switch";

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="1"
+   name=""
+   committed-date="2007-10-25T22:01:29.365252Z"
+   url="file:///Users/Shared/svn/Tournament/German.lproj/GroupResult.nib"
+   last-author="patru"
+   kind="dir"
+   uuid="db2e2194-5f6e-4700-b47e-0a399f06e5bd"
+   repos="file:///Users/Shared/svn/Tournament"
+   revision="3"/>
+<entry
+   committed-rev="1"
+   name="objects.nib"
+   text-time="2007-10-25T22:19:59.000000Z"
+   committed-date="2007-10-25T22:01:29.365252Z"
+   checksum="e1e74722114a49af2989837e27d9a6c8"
+   last-author="patru"
+   kind="file"
+   prop-time="2007-10-25T22:19:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="info.nib"
+   text-time="2007-10-25T22:19:59.000000Z"
+   committed-date="2007-10-25T22:01:29.365252Z"
+   checksum="e6be400e3d86d595822fc89bda082664"
+   last-author="patru"
+   kind="file"
+   prop-time="2007-10-25T22:19:59.000000Z"/>
+<entry
+   committed-rev="1"
+   name="classes.nib"
+   text-time="2007-10-25T22:19:59.000000Z"
+   committed-date="2007-10-25T22:01:29.365252Z"
+   checksum="6cbaf23bc457c3cdcdbfdb7fc0255e8e"
+   last-author="patru"
+   kind="file"
+   prop-time="2007-10-25T22:19:59.000000Z"/>
+</wc-entries>

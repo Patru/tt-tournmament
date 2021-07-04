@@ -1,0 +1,20 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {print = id; print1 = id; }; 
+            CLASS = MatchView; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {thisMatch = id; }; 
+            SUPERCLASS = NSView; 
+        }, 
+        {
+            ACTIONS = {print = id; printPortrait = id; }; 
+            CLASS = MatchViewController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {matchView = id; portraitView = id; portraitWindow = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}

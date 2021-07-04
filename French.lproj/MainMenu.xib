@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="195" id="196"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Tournoi" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="TournamentMainWindow" animationBehavior="default" id="21" userLabel="MainWindow" customClass="TournamentWindow">
+            <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="16" y="169" width="693" height="522"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="2">
+                <rect key="frame" x="0.0" y="0.0" width="693" height="522"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" defaultColumnWidth="100" minColumnWidth="1" maxVisibleColumns="1" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" id="317">
+                        <rect key="frame" x="385" y="20" width="203" height="157"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="selectUmpire:" target="322" id="364"/>
+                            <outlet property="delegate" destination="322" id="326"/>
+                        </connections>
+                    </browser>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" defaultColumnWidth="100" minColumnWidth="1" maxVisibleColumns="1" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" id="318">
+                        <rect key="frame" x="25" y="223" width="352" height="289"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                        <connections>
+                            <action selector="selectMatch:" target="329" id="375"/>
+                            <outlet property="delegate" destination="329" id="336"/>
+                        </connections>
+                    </browser>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="319">
+                        <rect key="frame" x="33" y="185" width="135" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Partie sans A" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="456">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">+</string>
+                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="printMatchWOUmpire:" target="329" id="334"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="320">
+                        <rect key="frame" x="582" y="127" width="106" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <buttonCell key="cell" type="push" title="Supprimer" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="457">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeSelectedUmpire:" target="322" id="360"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="321">
+                        <rect key="frame" x="204" y="185" width="130" height="32"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="push" title="Partie avec A" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="458">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent">+</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="printMatchWithUmpire:" target="329" id="333"/>
+                        </connections>
+                    </button>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" allowsEmptySelection="YES" defaultColumnWidth="100" minColumnWidth="1" maxVisibleColumns="1" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" id="380">
+                        <rect key="frame" x="385" y="222" width="288" height="290"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="selectMatchDirectly:" target="337" id="389"/>
+                            <outlet property="delegate" destination="337" id="392"/>
+                        </connections>
+                    </browser>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="382">
+                        <rect key="frame" x="447" y="185" width="91" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Résultat" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="459">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="selectMatchWithNumber:" target="337" id="388"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="383">
+                        <rect key="frame" x="588" y="185" width="91" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Retirer" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="460">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                            <string key="keyEquivalent" base64-UTF8="YES">
+Gw
+</string>
+                            <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="withdrawPlayable:" target="337" id="409"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="384">
+                        <rect key="frame" x="385" y="193" width="60" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="461">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <action selector="selectMatchWithNumber:" target="337" id="391"/>
+                        </connections>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="394">
+                        <rect key="frame" x="555" y="159" width="36" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" id="462">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="396">
+                        <rect key="frame" x="338" y="493" width="42" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" id="463">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="398">
+                        <rect key="frame" x="634" y="492" width="42" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" id="464">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <browser verticalHuggingPriority="750" allowsExpansionToolTips="YES" enabled="YES" hasHorizontalScroller="YES" allowsMultipleSelection="YES" defaultColumnWidth="100" minColumnWidth="1" maxVisibleColumns="1" titled="YES" separatesColumns="YES" allowsTypeSelect="YES" columnResizingType="auto" id="402">
+                        <rect key="frame" x="25" y="20" width="147" height="161"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <outlet property="delegate" destination="401" id="406"/>
+                        </connections>
+                    </browser>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="404">
+                        <rect key="frame" x="133" y="159" width="42" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="right" id="465">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="412">
+                        <rect key="frame" x="173" y="151" width="161" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Lire banque données" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="466">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="readFromDatabase:" target="401" id="413"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="433">
+                        <rect key="frame" x="173" y="119" width="161" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Changer de table" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="467">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="updateTable:" target="401" id="436"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="440">
+                        <rect key="frame" x="174" y="87" width="160" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Nouvelle table" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="468">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="addTable:" target="401" id="443"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="441">
+                        <rect key="frame" x="173" y="55" width="161" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Supprimer table" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="469">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="removeTable:" target="401" id="448"/>
+                        </connections>
+                    </button>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="442">
+                        <rect key="frame" x="173" y="23" width="161" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="Libérer toutes" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="470">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="freeAllTables:" target="401" id="445"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+        <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
+            <items>
+                <menuItem title="Tournoi" id="56">
+                    <menu key="submenu" title="Tournoi" systemMenu="apple" id="57">
+                        <items>
+                            <menuItem title="A propos de tournoi" id="58">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Préférences..." keyEquivalent="," id="129">
+                                <connections>
+                                    <action selector="showPreferencesPanel:" target="195" id="228"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="143">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Services" id="131">
+                                <menu key="submenu" title="Services" systemMenu="services" id="130"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="144">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Masquer" keyEquivalent="h" id="134">
+                                <connections>
+                                    <action selector="hide:" target="-2" id="152"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Masquer les autres" id="145">
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-2" id="146"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tout afficher" id="150">
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-2" id="153"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="149">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Quitter Tournoi" keyEquivalent="q" id="136">
+                                <connections>
+                                    <action selector="terminate:" target="-2" id="139"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Fichier" id="83">
+                    <menu key="submenu" title="Fichier" id="81">
+                        <items>
+                            <menuItem title="Nouveau" keyEquivalent="n" id="82"/>
+                            <menuItem title="Ouvrir..." keyEquivalent="o" id="72">
+                                <connections>
+                                    <action selector="openDocument:" target="-1" id="374"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Charger données des séries" keyEquivalent="d" id="194">
+                                <connections>
+                                    <action selector="loadSeriesData:" target="343" id="347"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Charger temps et tables..." id="480">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                            </menuItem>
+                            <menuItem title="Utilisé en dernier" id="124">
+                                <menu key="submenu" title="Utilisé en dernier" systemMenu="recentDocuments" id="125">
+                                    <items>
+                                        <menuItem title="Effacer menu" id="126">
+                                            <connections>
+                                                <action selector="clearRecentDocuments:" target="-1" id="127"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="79">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Enregistrer" keyEquivalent="s" id="75">
+                                <connections>
+                                    <action selector="saveDocument:" target="-1" id="371"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Enregistrer sous..." keyEquivalent="S" id="80">
+                                <connections>
+                                    <action selector="saveDocumentAs:" target="-1" id="372"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Fermer" keyEquivalent="w" id="400">
+                                <connections>
+                                    <action selector="orderOut:" target="-1" id="439"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="74">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Imprimer..." keyEquivalent="p" id="78">
+                                <connections>
+                                    <action selector="print:" target="-1" id="86"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Édition" id="163">
+                    <menu key="submenu" title="Édition" id="169">
+                        <items>
+                            <menuItem title="Annuler" keyEquivalent="z" id="158">
+                                <connections>
+                                    <action selector="undo:" target="-1" id="180"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Rétablir" keyEquivalent="Z" id="173">
+                                <connections>
+                                    <action selector="redo:" target="-1" id="178"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="156">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Couper" keyEquivalent="x" id="160">
+                                <connections>
+                                    <action selector="cut:" target="-1" id="175"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Copier" keyEquivalent="c" id="157">
+                                <connections>
+                                    <action selector="copy:" target="-1" id="181"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Coller" keyEquivalent="v" id="171">
+                                <connections>
+                                    <action selector="paste:" target="-1" id="176"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="174">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Rechercher" id="168">
+                                <menu key="submenu" title="Rechercher" id="159">
+                                    <items>
+                                        <menuItem title="Rechercher..." keyEquivalent="f" id="154">
+                                            <connections>
+                                                <action selector="showFinder:" target="369" id="370"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Rechercher le suivant" keyEquivalent="g" id="167"/>
+                                        <menuItem title="Rechercher le précédent" keyEquivalent="d" id="162"/>
+                                        <menuItem title="Rechercher la sélection" keyEquivalent="e" id="161"/>
+                                        <menuItem title="Aller à la sélection" keyEquivalent="j" id="155"/>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Distribution" id="352">
+                    <menu key="submenu" title="Distribution" id="353">
+                        <items>
+                            <menuItem title="Fiches vierges" keyEquivalent="z" id="354">
+                                <connections>
+                                    <action selector="show:" target="355" id="357"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Taxes d'inscription" id="377">
+                                <connections>
+                                    <action selector="show:" target="376" id="379"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Liste des jouers pour le tirage au sort" id="481">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="showDrawingLists:" target="449" id="482"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Liste des participants" id="451">
+                                <connections>
+                                    <action selector="showWindow:" target="449" id="452"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Résultats pour Click-TT" id="446">
+                                <connections>
+                                    <action selector="exportXmlResults:" target="195" id="479"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Résultats des simples" id="477">
+                                <connections>
+                                    <action selector="allSingleResultsAsText:" target="343" id="478"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Fichier des infos de série" id="453">
+                                <connections>
+                                    <action selector="saveSingleSeriesInfo:" target="343" id="454"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Fenêtre" id="19">
+                    <menu key="submenu" title="Fenêtre" systemMenu="window" id="24">
+                        <items>
+                            <menuItem title="Réduire" keyEquivalent="m" id="23">
+                                <connections>
+                                    <action selector="performMiniaturize:" target="-1" id="37"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Données des joueurs" keyEquivalent="s" id="410">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showPlayerWindow:" target="314" id="411"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Séries" keyEquivalent="s" id="344">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" command="YES"/>
+                                <connections>
+                                    <action selector="show:" target="343" id="345"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Données des séries" keyEquivalent="s" id="297">
+                                <modifierMask key="keyEquivalentModifierMask" control="YES" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="showSeriesWindow:" target="314" id="316"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Joueurs retirés" keyEquivalent="a" id="341">
+                                <connections>
+                                    <action selector="showNotPresentWindow:" target="195" id="342"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Inspecteur" keyEquivalent="i" id="362">
+                                <connections>
+                                    <action selector="updateView:" target="361" id="367"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tableaux" id="350">
+                                <connections>
+                                    <action selector="show:" target="348" id="351"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="92">
+                                <modifierMask key="keyEquivalentModifierMask" command="YES"/>
+                            </menuItem>
+                            <menuItem title="Tout ramener au premier plan" id="5">
+                                <connections>
+                                    <action selector="arrangeInFront:" target="-1" id="39"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="Aide" id="103">
+                    <menu key="submenu" title="Aide" id="106">
+                        <items>
+                            <menuItem title="Aide Tournoi" keyEquivalent="?" id="111">
+                                <connections>
+                                    <action selector="showHelp:" target="-1" id="122"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <customObject id="195" userLabel="TournamentController" customClass="TournamentController">
+            <connections>
+                <outlet property="emptyController" destination="355" id="356"/>
+                <outlet property="inputController" destination="314" id="328"/>
+                <outlet property="matchBrowser" destination="329" id="330"/>
+                <outlet property="matchesWin" destination="21" id="373"/>
+                <outlet property="openMatchesController" destination="337" id="340"/>
+                <outlet property="seriesController" destination="343" id="346"/>
+                <outlet property="startingListController" destination="449" id="450"/>
+                <outlet property="tournamentInspector" destination="361" id="366"/>
+                <outlet property="tournamentTableController" destination="401" id="438"/>
+                <outlet property="tournamentViewController" destination="348" id="349"/>
+                <outlet property="umpireController" destination="322" id="327"/>
+            </connections>
+        </customObject>
+        <customObject id="314" userLabel="InputController" customClass="InputController"/>
+        <customObject id="322" userLabel="UmpireController" customClass="UmpireController">
+            <connections>
+                <outlet property="countField" destination="394" id="395"/>
+                <outlet property="umpireBrowser" destination="317" id="323"/>
+            </connections>
+        </customObject>
+        <customObject id="329" userLabel="MatchBrowser" customClass="MatchBrowser">
+            <connections>
+                <outlet property="countField" destination="396" id="397"/>
+                <outlet property="matchBrowser" destination="318" id="331"/>
+            </connections>
+        </customObject>
+        <customObject id="337" userLabel="OpenMatchesController" customClass="OpenMatchesController">
+            <connections>
+                <outlet property="countField" destination="398" id="399"/>
+                <outlet property="numberField" destination="384" id="387"/>
+                <outlet property="openMatchesBrowser" destination="380" id="385"/>
+            </connections>
+        </customObject>
+        <customObject id="343" userLabel="SeriesController" customClass="SeriesController">
+            <connections>
+                <outlet property="loadSeriesItem" destination="194" id="368"/>
+            </connections>
+        </customObject>
+        <customObject id="348" userLabel="TournamentViewController" customClass="TournamentViewController"/>
+        <customObject id="355" userLabel="EmptyController" customClass="EmptyController"/>
+        <customObject id="361" userLabel="Inspector" customClass="TournamentInspectorController"/>
+        <customObject id="369" userLabel="FinderController" customClass="FinderController"/>
+        <customObject id="376" userLabel="PaymentViewController" customClass="PaymentViewController"/>
+        <customObject id="401" userLabel="TournamentTableController" customClass="TournamentTableController">
+            <connections>
+                <outlet property="countField" destination="404" id="405"/>
+                <outlet property="tableNextToFollowing" destination="419" id="432"/>
+                <outlet property="tableNumber" destination="420" id="430"/>
+                <outlet property="tablePriority" destination="421" id="431"/>
+                <outlet property="tournamentTableBrowser" destination="402" id="403"/>
+                <outlet property="window" destination="414" id="424"/>
+            </connections>
+        </customObject>
+        <window title="Table" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="TournamentTable" animationBehavior="default" id="414" userLabel="Table" customClass="NSPanel">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="403" y="356" width="235" height="154"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1578"/>
+            <value key="minSize" type="size" width="213" height="107"/>
+            <view key="contentView" id="415">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button imageHugsTitle="YES" id="419">
+                        <rect key="frame" x="19" y="58" width="199" height="18"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="check" title="A côté de la table suivante" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="471">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                    </button>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="420">
+                        <rect key="frame" x="137" y="112" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="472">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="421">
+                        <rect key="frame" x="137" y="82" width="78" height="22"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="473">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="422">
+                        <rect key="frame" x="17" y="114" width="115" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Numéro" id="474">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" id="423">
+                        <rect key="frame" x="18" y="82" width="114" height="17"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Priorité" id="475">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" imageHugsTitle="YES" id="428">
+                        <rect key="frame" x="130" y="12" width="99" height="32"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <buttonCell key="cell" type="push" title="C'est bon" bezelStyle="rounded" alignment="center" state="on" borderStyle="border" inset="2" id="476">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="storeTable:" target="401" id="437"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+        </window>
+        <customObject id="449" userLabel="StartingListController" customClass="StartingListController"/>
+    </objects>
+</document>

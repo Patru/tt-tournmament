@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13196"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="7JF-oy-tvc">
+            <objects>
+                <customObject id="5Mp-ph-GDL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <windowController storyboardIdentifier="Pref Window Controller" id="prY-Uq-MNc" sceneMemberID="viewController">
+                    <window key="window" title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="8FQ-ll-o12" userLabel="Preferences">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="425" y="526" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1577"/>
+                        <connections>
+                            <outlet property="delegate" destination="prY-Uq-MNc" id="k3e-Ka-gHt"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="BnB-gd-4WG" kind="relationship" relationship="window.shadowedContentViewController" id="0Kg-P0-yXr"/>
+                    </connections>
+                </windowController>
+            </objects>
+            <point key="canvasLocation" x="681" y="180"/>
+        </scene>
+        <!--Preferences View Controller-->
+        <scene sceneID="Mvi-l8-fk5">
+            <objects>
+                <viewController storyboardIdentifier="Pref Controller" id="BnB-gd-4WG" customClass="PreferencesViewController" customModule="Tournament" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Eeb-mI-TxS">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="370"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <stackView distribution="fill" orientation="vertical" alignment="trailing" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1C6-ll-jhe">
+                                <rect key="frame" x="20" y="186" width="366" height="164"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jqm-pv-EXB">
+                                        <rect key="frame" x="82" y="147" width="284" height="17"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qcu-Cw-PpZ">
+                                                <rect key="frame" x="-2" y="0.0" width="69" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="# Spiele" id="MQX-vL-TTK">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5aa-zO-cBu">
+                                                <rect key="frame" x="71" y="0.0" width="69" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Breite" id="PAt-JC-QBL">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEn-re-kuN">
+                                                <rect key="frame" x="144" y="0.0" width="69" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Erstes" id="K1z-Ed-4aZ">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tme-9h-EfV">
+                                                <rect key="frame" x="217" y="0.0" width="69" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Tisch" id="wa6-Z5-r7q">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k1p-vf-ejC">
+                                        <rect key="frame" x="0.0" y="117" width="366" height="22"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Kad-MT-33v">
+                                                <rect key="frame" x="-2" y="3" width="78" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Hoch" id="ihh-ob-SZs">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kz1-vt-Y5Y">
+                                                <rect key="frame" x="82" y="0.0" width="284" height="22"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="UaM-ld-mhs" userLabel="Match Width Portrait">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="65" id="82x-lw-xn0"/>
+                                                        </constraints>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="yFw-KP-aea">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="SrA-B9-ycb"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourNumMatchPortrait" id="Wfk-MW-2wU"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oAP-sj-IXg" userLabel="# Matches Portrait">
+                                                        <rect key="frame" x="73" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="vjm-ip-Wbz">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="MMZ-lh-Mt6"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourMatchWidthPortrait" id="AL4-7a-ym7"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-Ow-iTx" userLabel="Matches Portrait">
+                                                        <rect key="frame" x="146" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="j64-Bg-5Zw">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="V6W-Vl-QCP"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourFirstWidthPortrait" id="PEI-pZ-tl7"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="3Ko-sN-6gx">
+                                                        <rect key="frame" x="219" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="bZq-B9-lNA">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourTablePortrait" id="4Y7-pY-HaU"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="oAP-sj-IXg" firstAttribute="width" secondItem="UaM-ld-mhs" secondAttribute="width" id="7q8-9H-lqB"/>
+                                                    <constraint firstItem="xkF-Ow-iTx" firstAttribute="width" secondItem="UaM-ld-mhs" secondAttribute="width" id="ObY-Rl-8gY"/>
+                                                    <constraint firstItem="3Ko-sN-6gx" firstAttribute="width" secondItem="UaM-ld-mhs" secondAttribute="width" id="d8M-wJ-GCm"/>
+                                                </constraints>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8hl-Py-FwA">
+                                        <rect key="frame" x="0.0" y="87" width="366" height="22"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dWx-EP-x3G">
+                                                <rect key="frame" x="-2" y="3" width="78" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Quer" id="2sp-aU-Xrk">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjM-6T-J3a">
+                                                <rect key="frame" x="82" y="0.0" width="284" height="22"/>
+                                                <subviews>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A0C-0q-mPV" userLabel="Match Width Landscape">
+                                                        <rect key="frame" x="0.0" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="M8N-e0-ALr">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Nyg-cM-Dmd"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourNumMatchLandscape" id="5pp-O2-9Oo"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4AA-AV-9cE" userLabel="# Matches Landscape">
+                                                        <rect key="frame" x="73" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="oKz-Pi-hB4">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="HP4-QQ-KlL"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourMatchWidthLandscape" id="o4m-Jc-sbO"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ysB-KS-gM1" userLabel="Matches Landscape">
+                                                        <rect key="frame" x="146" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" drawsBackground="YES" id="bgZ-RU-gpY">
+                                                            <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="8dN-YI-nuz"/>
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourFirstWidthLandscape" id="2re-xo-hsa"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cWL-tL-q71">
+                                                        <rect key="frame" x="219" y="0.0" width="65" height="22"/>
+                                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="left" drawsBackground="YES" id="R2H-2Y-eqT">
+                                                            <font key="font" metaFont="system"/>
+                                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </textFieldCell>
+                                                        <connections>
+                                                            <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourTableLandscape" id="eQU-s9-f9a"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                                <visibilityPriorities>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                    <integer value="1000"/>
+                                                </visibilityPriorities>
+                                                <customSpacing>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                    <real value="3.4028234663852886e+38"/>
+                                                </customSpacing>
+                                            </stackView>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Isi-OX-1PJ">
+                                        <rect key="frame" x="0.0" y="58" width="366" height="21"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jRo-6P-Da1">
+                                                <rect key="frame" x="-2" y="4" width="78" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Turnier" id="zTV-zA-A66">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dfP-NX-Q9y">
+                                                <rect key="frame" x="80" y="-3" width="289" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Old-MB-47W"/>
+                                                </constraints>
+                                                <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="5ej-P2-cFp" id="iNL-FG-RBQ">
+                                                    <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="menu"/>
+                                                    <menu key="menu" id="Tg9-Ra-Wzm">
+                                                        <items>
+                                                            <menuItem title="Item 1" state="on" id="5ej-P2-cFp"/>
+                                                            <menuItem title="Item 2" id="T1x-Az-UcK"/>
+                                                            <menuItem title="Item 3" id="Svj-DD-KlA"/>
+                                                        </items>
+                                                    </menu>
+                                                </popUpButtonCell>
+                                                <connections>
+                                                    <binding destination="0zH-Pv-1JU" name="content" keyPath="arrangedObjects" id="0vi-wd-Y4G"/>
+                                                    <binding destination="0zH-Pv-1JU" name="contentValues" keyPath="arrangedObjects.title" previousBinding="0vi-wd-Y4G" id="D4H-lh-m0Y"/>
+                                                    <binding destination="0zH-Pv-1JU" name="selectedIndex" keyPath="selectionIndex" previousBinding="D4H-lh-m0Y" id="D7M-Hr-Mk0"/>
+                                                </connections>
+                                            </popUpButton>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gsw-sX-36T">
+                                        <rect key="frame" x="0.0" y="29" width="366" height="21"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-Vk-huk">
+                                                <rect key="frame" x="-2" y="2" width="78" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Papier hoch" id="Mx1-8B-V9h">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button toolTip="Click to set print info in dialog" verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="20V-1Y-OcY">
+                                                <rect key="frame" x="76" y="-7" width="296" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="tcM-Vu-I2M"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="push" title="setzen" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="uUe-R1-NHR">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="setupSmallPaperPortrait:" target="BnB-gd-4WG" id="HnD-3q-1aA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="centerY" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNU-jH-crh">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="21"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sat-Iw-51Z">
+                                                <rect key="frame" x="-2" y="2" width="78" height="17"/>
+                                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="right" title="Papier quer" id="HU7-OH-N9T">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="orl-T9-LIN">
+                                                <rect key="frame" x="76" y="-7" width="296" height="32"/>
+                                                <buttonCell key="cell" type="push" title="setzen" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="P81-j9-UsY">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="setupSmallPaperLandscape:" target="BnB-gd-4WG" id="BZw-tP-VrY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sat-Iw-51Z" firstAttribute="width" secondItem="m0w-Vk-huk" secondAttribute="width" id="14Y-S7-myq"/>
+                                    <constraint firstItem="eEn-re-kuN" firstAttribute="width" secondItem="xkF-Ow-iTx" secondAttribute="width" id="2Bq-dW-WD1"/>
+                                    <constraint firstItem="hNU-jH-crh" firstAttribute="leading" secondItem="1C6-ll-jhe" secondAttribute="leading" id="2Uc-sH-NOP"/>
+                                    <constraint firstItem="gsw-sX-36T" firstAttribute="leading" secondItem="1C6-ll-jhe" secondAttribute="leading" id="9rT-gS-7G8"/>
+                                    <constraint firstItem="eEn-re-kuN" firstAttribute="width" secondItem="xkF-Ow-iTx" secondAttribute="width" id="BZd-gx-IgJ"/>
+                                    <constraint firstItem="Isi-OX-1PJ" firstAttribute="leading" secondItem="1C6-ll-jhe" secondAttribute="leading" id="EmI-jy-Gg8"/>
+                                    <constraint firstItem="k1p-vf-ejC" firstAttribute="leading" secondItem="1C6-ll-jhe" secondAttribute="leading" id="FEX-ux-E2x"/>
+                                    <constraint firstItem="3Ko-sN-6gx" firstAttribute="width" secondItem="cWL-tL-q71" secondAttribute="width" id="L3i-UZ-ndE"/>
+                                    <constraint firstItem="m0w-Vk-huk" firstAttribute="width" secondItem="jRo-6P-Da1" secondAttribute="width" id="S2a-V6-Aei"/>
+                                    <constraint firstItem="Qcu-Cw-PpZ" firstAttribute="width" secondItem="UaM-ld-mhs" secondAttribute="width" id="SMA-eo-pig"/>
+                                    <constraint firstItem="orl-T9-LIN" firstAttribute="width" secondItem="20V-1Y-OcY" secondAttribute="width" id="VQd-bc-MUM"/>
+                                    <constraint firstItem="3Ko-sN-6gx" firstAttribute="width" secondItem="tme-9h-EfV" secondAttribute="width" id="YN6-vs-Ama"/>
+                                    <constraint firstItem="oAP-sj-IXg" firstAttribute="width" secondItem="4AA-AV-9cE" secondAttribute="width" id="YnB-ka-e8Y"/>
+                                    <constraint firstItem="tme-9h-EfV" firstAttribute="width" secondItem="3Ko-sN-6gx" secondAttribute="width" id="ahu-VB-r4X"/>
+                                    <constraint firstItem="Kad-MT-33v" firstAttribute="width" secondItem="m0w-Vk-huk" secondAttribute="width" id="bud-EH-EEd"/>
+                                    <constraint firstItem="5aa-zO-cBu" firstAttribute="width" secondItem="oAP-sj-IXg" secondAttribute="width" id="di2-Md-08N"/>
+                                    <constraint firstItem="Sat-Iw-51Z" firstAttribute="width" secondItem="m0w-Vk-huk" secondAttribute="width" id="iDf-3b-XE5"/>
+                                    <constraint firstAttribute="trailing" secondItem="8hl-Py-FwA" secondAttribute="trailing" id="lf1-jh-toH"/>
+                                    <constraint firstItem="UaM-ld-mhs" firstAttribute="width" secondItem="A0C-0q-mPV" secondAttribute="width" id="mx9-7x-R3N"/>
+                                    <constraint firstItem="m0w-Vk-huk" firstAttribute="width" secondItem="dWx-EP-x3G" secondAttribute="width" id="odm-sA-b3K"/>
+                                    <constraint firstItem="m0w-Vk-huk" firstAttribute="width" secondItem="jRo-6P-Da1" secondAttribute="width" id="qRP-1r-ejP"/>
+                                    <constraint firstItem="8hl-Py-FwA" firstAttribute="leading" secondItem="1C6-ll-jhe" secondAttribute="leading" id="r7L-kQ-yc6"/>
+                                    <constraint firstItem="xkF-Ow-iTx" firstAttribute="width" secondItem="ysB-KS-gM1" secondAttribute="width" id="rJ8-4m-bEZ"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
+                            <matrix verticalHuggingPriority="750" mode="highlight" allowsEmptySelection="NO" autosizesCells="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2V-FO-BWG">
+                                <rect key="frame" x="102" y="20" width="178" height="158"/>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <size key="cellSize" width="178" height="18"/>
+                                <size key="intercellSpacing" width="4" height="2"/>
+                                <buttonCell key="prototype" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" controlSize="small" inset="2" id="Hnm-0q-w2r">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="smallSystem"/>
+                                </buttonCell>
+                                <cells>
+                                    <column>
+                                        <buttonCell type="check" title="Schiedsrichter" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="fNB-wP-OgR">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourUmpires" id="p5w-2W-acJ"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="Tabellen Querformat" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="1" inset="2" id="7mZ-zG-CCR">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourLandscape" id="61h-x9-5RE"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="Spielnummern" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="2" inset="2" id="qIa-8A-6ns">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourShowNumbers" id="wee-bc-hty"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="exakte Resultate" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="3" inset="2" id="wTe-aU-FaE">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourExactResults" id="SrX-Zy-qkl"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="direkt drucken" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="4" inset="2" id="j97-FF-ec5">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourPrintImmediately" id="oR8-7O-ENP"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="Gruppen mit Buchstaben" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="5" inset="2" id="oUB-g2-iHr">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourGroupLetters" id="t6n-CV-9qb"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="andere Matches" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="6" inset="2" id="Y28-R6-fAr">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourOtherMatches" id="Z9S-Zp-Bfk"/>
+                                            </connections>
+                                        </buttonCell>
+                                        <buttonCell type="check" title="Gruppendetails" bezelStyle="regularSquare" imagePosition="left" alignment="left" tag="7" inset="2" id="Ajh-Wd-bJv">
+                                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                            <connections>
+                                                <binding destination="VsH-M3-a3I" name="value" keyPath="values.TourGroupDetails" id="6eO-cn-rbC"/>
+                                            </connections>
+                                        </buttonCell>
+                                    </column>
+                                </cells>
+                            </matrix>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1C6-ll-jhe" firstAttribute="top" secondItem="Eeb-mI-TxS" secondAttribute="top" constant="20" id="3Bp-Oe-YaD"/>
+                            <constraint firstItem="1C6-ll-jhe" firstAttribute="leading" secondItem="Eeb-mI-TxS" secondAttribute="leading" constant="20" id="Nac-iB-cLu"/>
+                            <constraint firstItem="K2V-FO-BWG" firstAttribute="top" secondItem="1C6-ll-jhe" secondAttribute="bottom" constant="8" id="m2E-DX-ehZ"/>
+                            <constraint firstItem="orl-T9-LIN" firstAttribute="leading" secondItem="K2V-FO-BWG" secondAttribute="leading" id="os4-pb-r05"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="K2V-FO-BWG" secondAttribute="bottom" constant="20" id="sYn-os-F5T"/>
+                            <constraint firstAttribute="trailing" secondItem="1C6-ll-jhe" secondAttribute="trailing" constant="20" id="zSU-Rc-SJd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="smallPaperLandscapeButton" destination="orl-T9-LIN" id="ixD-5U-rpE"/>
+                        <outlet property="smallPaperPortaitButton" destination="20V-1Y-OcY" id="Ywh-Lj-4S1"/>
+                        <outlet property="tournamentList" destination="0zH-Pv-1JU" id="cJz-Re-WZv"/>
+                    </connections>
+                </viewController>
+                <customObject id="GoC-hH-C2Y" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <userDefaultsController representsSharedInstance="YES" id="VsH-M3-a3I"/>
+                <arrayController id="0zH-Pv-1JU" userLabel="tournaments"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="668"/>
+        </scene>
+    </scenes>
+</document>

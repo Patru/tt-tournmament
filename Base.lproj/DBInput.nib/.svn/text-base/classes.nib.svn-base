@@ -1,0 +1,63 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {showPlayerWindow = id; showSeriesWindow = id; }; 
+            CLASS = InputController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {playerController = id; seriesController = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                selectMatchDirectly = id; 
+                selectMatchWithNumber = id; 
+                show = id; 
+                withdraw = id; 
+            }; 
+            CLASS = OpenMatchesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {countField = id; numberField = id; openMatchesBrowser = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                deleteSelected = id; 
+                deleteWholeDatabase = id; 
+                newPlaySeriesWithSamePass = id; 
+                saveAll = id; 
+            }; 
+            CLASS = PlaySeriesController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {table = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {
+                checkSeriesForSelectedPlayer = id; 
+                getPlayerWithPass = id; 
+                getPlayersInClub = id; 
+                getPlayersWithLastName = id; 
+                newPlayerWithSameClub = id; 
+            }; 
+            CLASS = PlayerController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                playSeriesController = id; 
+                playerWindow = id; 
+                seriesController = id; 
+                table = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {deleteSelected = id; getAllSeries = id; newSeries = id; show = id; }; 
+            CLASS = SeriesDataController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {playSeriesController = id; table = id; window = id; }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {CLASS = TestStringDrawingView; LANGUAGE = ObjC; SUPERCLASS = NSView; }
+    ); 
+    IBVersion = 1; 
+}

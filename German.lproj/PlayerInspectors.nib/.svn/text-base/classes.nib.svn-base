@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = InspectorController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {
+            ACTIONS = {
+                checkSeriesForSelectedPlayer = id; 
+                getPlayerWithPass = id; 
+                getPlayersInClub = id; 
+                getPlayersWithLastName = id; 
+                newPlayerWithSameClub = id; 
+                showWindow = id; 
+            }; 
+            CLASS = PlayerController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                playSeriesController = id; 
+                playerWindow = id; 
+                seriesController = id; 
+                table = id; 
+            }; 
+            SUPERCLASS = NSObject; 
+        }, 
+        {
+            ACTIONS = {inspectMatch = id; selectMatch = id; }; 
+            CLASS = PlayerInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                activity = NSTextField; 
+                currentMatch = NSTextField; 
+                infoForm = NSForm; 
+                matchView = NSView; 
+                matches = NSBrowser; 
+                numberOfMatches = NSTextField; 
+                playerView = NSView; 
+                present = NSButton; 
+                ready = NSButton; 
+                tourPriority = NSTextField; 
+                wo = NSButton; 
+            }; 
+            SUPERCLASS = InspectorController; 
+        }
+    ); 
+    IBVersion = 1; 
+}

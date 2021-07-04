@@ -1,0 +1,19 @@
+Version 0.95
+- Gruppierung der Serien (Samstag/Sonntag)
+- Auslosen aller angezeigten Serien
+- Berücksichtigung des Auslosungsstatus beim abspeichern als PDF
+- Ausdrucken aller/aller laufenden Serien direkt auf dem Drucker
+- Berücksichtigung der sinnvollen Seiten bei obiger Funktion
+- vollständiges Neuladen aller Anmeldungen für publizieren
+  (d.h. es wird immer die aktuelle Version der DB veröffentlicht)
+- Wieder einmal ein paar Texte auf französisch übersetzt (insbesondere die Webseite und alle mit Umlauten)
+- Berücksichtigung des eingestellten System-Datumsformats für Anmeldungen
+
+Bugfixes
+--------
+- Fehler beim Laden der Backup-Daten korrigiert, der Spieler blockierte
+  die beim letzten Save gerade am spielen waren (endlich!)!
+
+Version 0.98
+------------
+- Elo Serien mit zweistufiger Auslosung und Click-TT Export

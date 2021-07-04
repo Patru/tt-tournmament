@@ -1,0 +1,14 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {inspect = id; }; 
+            CLASS = DoublePlayerInspector; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {infoFormA = NSForm; infoFormB = NSForm; playerView = NSView; }; 
+            SUPERCLASS = InspectorController; 
+        }, 
+        {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }, 
+        {CLASS = InspectorController; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
+    ); 
+    IBVersion = 1; 
+}
